@@ -1,0 +1,18 @@
+# Local datasets and analysis scratch space
+/数据集/
+/.analysis-work/
+
+# Downloaded third-party skill; see README for upstream
+/math-modeling-skill/
+
+# OS, Python caches and local environments
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local credentials and environment configuration
+.env
+.env.*
+!.env.example
