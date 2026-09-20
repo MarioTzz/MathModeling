@@ -1,0 +1,4 @@
+# Preserve generated CSV bytes (UTF-8 BOM and RFC-style CRLF) for manifest hashes.
+预处理数据集/*.csv -text whitespace=cr-at-eol
+# Numeric MAT payloads are binary; never perform line-ending conversion.
+*.mat binary

@@ -1,0 +1,42 @@
+[
+  {
+    "relative_path": "源域数据集/48kHz_DE_data/B/0014/B014_0.mat",
+    "de_start": 0,
+    "fe_start": 1068,
+    "overlap_samples": 190932,
+    "fe_over_de_slope": 0.9848484848484853,
+    "affine_residual_std_ratio": 5.030833082076358e-16
+  },
+  {
+    "relative_path": "源域数据集/48kHz_DE_data/B/0021/B021_0.mat",
+    "de_start": 0,
+    "fe_start": 33686,
+    "overlap_samples": 158314,
+    "fe_over_de_slope": 0.9848484848484851,
+    "affine_residual_std_ratio": 2.5551902345565814e-16
+  },
+  {
+    "relative_path": "源域数据集/48kHz_DE_data/IR/0021/IR021_0.mat",
+    "de_start": 14598,
+    "fe_start": 0,
+    "overlap_samples": 177402,
+    "fe_over_de_slope": 0.9848484848484845,
+    "affine_residual_std_ratio": 3.431161281657756e-16
+  },
+  {
+    "relative_path": "源域数据集/48kHz_DE_data/OR/Centered/0014/OR014@6_0.mat",
+    "de_start": 42870,
+    "fe_start": 0,
+    "overlap_samples": 149130,
+    "fe_over_de_slope": 0.9848484848484849,
+    "affine_residual_std_ratio": 2.1639380601782062e-16
+  },
+  {
+    "relative_path": "源域数据集/48kHz_DE_data/OR/Centered/0021/OR021@6_0.mat",
+    "de_start": 0,
+    "fe_start": 13318,
+    "overlap_samples": 178682,
+    "fe_over_de_slope": 0.9848484848484845,
+    "affine_residual_std_ratio": 3.260937396294198e-16
+  }
+]

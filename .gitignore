@@ -1,4 +1,5 @@
 # Local datasets and analysis scratch space
+/.analysis-work/
 # Downloaded third-party skill; see README for upstream
 /math-modeling-skill/
 

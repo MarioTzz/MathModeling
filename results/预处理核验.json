@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "checked_original_files": 177,
+  "checked_payload_hashes": 362,
+  "checked_channels": 427,
+  "checked_native_samples": 54870522,
+  "checked_windows": 1196,
+  "max_native_reconstruction_abs_error": 1.4210854715202004e-14,
+  "max_window_reconstruction_abs_error": 1.4210854715202004e-14,
+  "max_resampling_abs_error": 0.0,
+  "file_group_leakage": false,
+  "source_train_only_scaling": true,
+  "target_labels_unknown": true,
+  "source_class_by_split": {
+    "train": {
+      "B": 24,
+      "IR": 24,
+      "OR": 46,
+      "N": 2
+    },
+    "validation": {
+      "B": 8,
+      "IR": 8,
+      "OR": 15,
+      "N": 1
+    },
+    "test": {
+      "B": 8,
+      "IR": 8,
+      "OR": 16,
+      "N": 1
+    }
+  },
+  "pipeline_sha256": "84f11f4a415a78ae5e628dce9e07b5434eaf7af1c963d381fad7ee0e00c09ee7",
+  "verifier_sha256": "3ce474aeb8d088cce4f18af412d5d66a6a7ed7481ed0c7a0a0cdd91346b0ccb9",
+  "data_manifest_sha256": "44b55e1a92c69b18b9f277c25f7d5f3f921c3da573149af0d41e3ee09ecd4a96"
+}

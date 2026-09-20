@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "payload_hashes_identical": 362,
+  "manifest_bytes_identical": true,
+  "data_manifest_sha256": "44b55e1a92c69b18b9f277c25f7d5f3f921c3da573149af0d41e3ee09ecd4a96",
+  "mat_files": 354,
+  "native_channels": 427,
+  "native_samples": 54870522,
+  "resampled_samples": 14390548,
+  "window_count": 1196,
+  "tail_files": 7,
+  "tail_samples": 38548,
+  "maximum_duration_error_seconds": 6.249999999985434e-05,
+  "source_rpm_sources": {
+    "field": 151,
+    "filename": 10
+  },
+  "file_split_seed_42_reproduced": true,
+  "source_train_files": 96,
+  "source_train_windows": 637,
+  "overlap_pairs_flagged_and_grouped": 5,
+  "repro_input_hashes_verified": 180,
+  "author_verification_identical": true,
+  "readme_numbers_and_definitions_consistent": true
+}

@@ -1,0 +1,56 @@
+{
+  "files": 177,
+  "source_files": 161,
+  "target_files": 16,
+  "channels": 427,
+  "native_samples": 54870522,
+  "windows": 1196,
+  "windows_by_split": {
+    "validation": 220,
+    "test": 211,
+    "train": 637,
+    "target": 128
+  },
+  "files_by_split": {
+    "validation": 32,
+    "test": 33,
+    "train": 96,
+    "target": 16
+  },
+  "source_class_by_split": {
+    "train": {
+      "B": 24,
+      "IR": 24,
+      "OR": 46,
+      "N": 2
+    },
+    "validation": {
+      "B": 8,
+      "IR": 8,
+      "OR": 15,
+      "N": 1
+    },
+    "test": {
+      "B": 8,
+      "IR": 8,
+      "OR": 16,
+      "N": 1
+    }
+  },
+  "rpm_from_filename": 10,
+  "validated_overlap_pairs": 5,
+  "tail_samples_common": 38548,
+  "max_native_reconstruction_abs_error": 1.4210854715202004e-14,
+  "original_hashes_unchanged": true,
+  "interpolated_points": 0,
+  "deleted_native_points": 0,
+  "standardized_all_finite": true,
+  "channels_by_quality_flag": {
+    "dc_flag": 2,
+    "energy_variation_flag": 4,
+    "high_kurtosis_flag": 32,
+    "suspected_clipping_flag": 4
+  },
+  "windows_touching_suspected_clipping": 7,
+  "windows_touching_filter_boundary": 138
+}

@@ -1,0 +1,38 @@
+{
+  "seed": 42,
+  "common_fs_hz": 12000,
+  "window_seconds": 1,
+  "window_overlap": 0,
+  "source_channel": "DE",
+  "float_dtype": "float64",
+  "resample_filter": [
+    "kaiser",
+    5.0
+  ],
+  "resample_padtype": "line",
+  "split": "class-stratified by original file; floor(60%) train, floor(20%) validation, remainder test; min 1 validation/test",
+  "feature_scaling": "z-score; source training windows only; population std ddof=0; zero std -> 1",
+  "quality_thresholds": {
+    "abs_mean_over_raw_rms": 0.1,
+    "block_ac_rms_ratio": 2,
+    "kurtosis_pearson": 20,
+    "extreme_plateau_min_run": 2
+  },
+  "quality_action": "flag_only; no deletion, clipping or interpolation",
+  "label_mapping": {
+    "N": 0,
+    "OR": 1,
+    "IR": 2,
+    "B": 3
+  },
+  "target_unknown_code": -1,
+  "smoke": false,
+  "features": [
+    "ac_rms",
+    "mean_abs",
+    "peak_to_peak",
+    "crest_factor",
+    "kurtosis_pearson",
+    "skewness"
+  ]
+}
