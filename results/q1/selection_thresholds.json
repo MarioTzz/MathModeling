@@ -1,0 +1,30 @@
+{
+  "0.5": [
+    "env_spread_order",
+    "env_entropy",
+    "env_centroid_order",
+    "skewness",
+    "peak_to_peak",
+    "env_harmonic_ratio",
+    "crest_factor",
+    "env_low_order_ratio"
+  ],
+  "0.6": [
+    "env_spread_order",
+    "env_entropy",
+    "env_centroid_order",
+    "skewness",
+    "peak_to_peak",
+    "env_harmonic_ratio",
+    "crest_factor",
+    "env_low_order_ratio"
+  ],
+  "0.7": [
+    "env_spread_order",
+    "env_entropy",
+    "env_centroid_order",
+    "skewness",
+    "peak_to_peak",
+    "env_harmonic_ratio"
+  ]
+}

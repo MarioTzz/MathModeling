@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "all_twelve_feature_scaled_max_errors": {
+    "equal_revolutions": 4.964228199468013e-15,
+    "one_second": 4.9576967718687885e-15
+  },
+  "sensitivity_max_absolute_errors": {
+    "rpm_common": 4.884981308350689e-15,
+    "rpm_own": 4.884981308350689e-15,
+    "edge": 1.016547956922409e-15
+  },
+  "gain_cases": 15,
+  "rpm_rows": 160,
+  "edge_rows": 792,
+  "nonzero_rpm_drift": {
+    "equal_revolutions": {
+      "median": 0.2316421143974255,
+      "max": 1.05366192803102
+    },
+    "one_second": {
+      "median": 0.11379819146207801,
+      "max": 0.980728554964184
+    }
+  },
+  "author_input_count": 144,
+  "author_output_count": 70,
+  "input_hash_mismatches": [],
+  "output_hash_mismatches": [],
+  "png_count": 24,
+  "png_byte_mismatches": [],
+  "svg_semantic_matches": [
+    "flow_overall_model.svg",
+    "raw_q1_acquisition.svg",
+    "raw_q1_waveforms.svg",
+    "result_q1_correlations.svg",
+    "result_q1_feature_distributions.svg",
+    "raw_q1_class_split.svg",
+    "process_q1_demodulation.svg",
+    "process_q1_candidate_scores.svg",
+    "process_q1_stability.svg",
+    "flow_q1_model.svg",
+    "result_q1_rpm_sensitivity.svg",
+    "result_q1_source_mechanism.svg"
+  ]
+}

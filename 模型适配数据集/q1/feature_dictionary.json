@@ -1,0 +1,98 @@
+[
+  {
+    "feature": "ac_rms",
+    "chinese": "交流均方根",
+    "equation": "1.12",
+    "block": "amplitude",
+    "selected": false,
+    "unit": "unknown_original_scale"
+  },
+  {
+    "feature": "mean_abs",
+    "chinese": "绝对均值",
+    "equation": "1.13",
+    "block": "amplitude",
+    "selected": false,
+    "unit": "unknown_original_scale"
+  },
+  {
+    "feature": "peak_to_peak",
+    "chinese": "峰峰值",
+    "equation": "1.14",
+    "block": "amplitude",
+    "selected": true,
+    "unit": "unknown_original_scale"
+  },
+  {
+    "feature": "crest_factor",
+    "chinese": "峰值因子",
+    "equation": "1.15",
+    "block": "impulse_shape",
+    "selected": true,
+    "unit": "dimensionless"
+  },
+  {
+    "feature": "kurtosis_pearson",
+    "chinese": "Pearson 峭度",
+    "equation": "1.16",
+    "block": "impulse_shape",
+    "selected": false,
+    "unit": "dimensionless"
+  },
+  {
+    "feature": "skewness",
+    "chinese": "偏度",
+    "equation": "1.17",
+    "block": "impulse_shape",
+    "selected": true,
+    "unit": "dimensionless"
+  },
+  {
+    "feature": "env_entropy",
+    "chinese": "包络谱熵",
+    "equation": "1.18",
+    "block": "envelope",
+    "selected": true,
+    "unit": "dimensionless"
+  },
+  {
+    "feature": "env_centroid_order",
+    "chinese": "阶次质心",
+    "equation": "1.19",
+    "block": "envelope",
+    "selected": true,
+    "unit": "dimensionless"
+  },
+  {
+    "feature": "env_spread_order",
+    "chinese": "阶次离散度",
+    "equation": "1.20",
+    "block": "envelope",
+    "selected": true,
+    "unit": "dimensionless"
+  },
+  {
+    "feature": "env_peak_order",
+    "chinese": "主峰阶次",
+    "equation": "1.21",
+    "block": "envelope",
+    "selected": false,
+    "unit": "dimensionless"
+  },
+  {
+    "feature": "env_harmonic_ratio",
+    "chinese": "谐波集中度",
+    "equation": "1.22",
+    "block": "envelope",
+    "selected": true,
+    "unit": "dimensionless"
+  },
+  {
+    "feature": "env_low_order_ratio",
+    "chinese": "低阶能量比",
+    "equation": "1.23",
+    "block": "envelope",
+    "selected": true,
+    "unit": "dimensionless"
+  }
+]

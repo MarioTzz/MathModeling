@@ -1,0 +1,13 @@
+﻿variant,fold,score,features,fit_files,hold_files
+500-1500Hz_R10,0,0.364126917322905,env_harmonic_ratio|peak_to_peak|skewness|env_centroid_order|env_low_order_ratio|env_entropy|kurtosis_pearson|ac_rms,34,36
+500-1500Hz_R10,1,0.381729861427581,env_spread_order|env_entropy|skewness|env_centroid_order|env_harmonic_ratio|kurtosis_pearson|env_peak_order|peak_to_peak,36,34
+500-1500Hz_R20,0,0.370449305133547,env_peak_order|env_harmonic_ratio|skewness|peak_to_peak|env_centroid_order|env_entropy|env_low_order_ratio|crest_factor,34,36
+500-1500Hz_R20,1,0.448678570705422,env_spread_order|env_entropy|skewness|env_centroid_order|env_harmonic_ratio|crest_factor|env_low_order_ratio|peak_to_peak,36,34
+1500-3000Hz_R10,0,0.623007887851375,env_entropy|env_spread_order|env_centroid_order|env_harmonic_ratio|peak_to_peak|skewness|kurtosis_pearson|ac_rms,34,36
+1500-3000Hz_R10,1,0.544144443132644,env_spread_order|env_centroid_order|env_entropy|skewness|env_harmonic_ratio|env_peak_order|env_low_order_ratio|kurtosis_pearson,36,34
+1500-3000Hz_R20,0,0.622304118337254,env_entropy|env_spread_order|env_centroid_order|env_harmonic_ratio|skewness|peak_to_peak|crest_factor|ac_rms,34,36
+1500-3000Hz_R20,1,0.629545385358242,env_spread_order|env_centroid_order|env_entropy|skewness|env_peak_order|env_harmonic_ratio|env_low_order_ratio|crest_factor,36,34
+3000-5000Hz_R10,0,0.453937451457164,env_harmonic_ratio|env_low_order_ratio|peak_to_peak|env_entropy|skewness|kurtosis_pearson|ac_rms|env_peak_order,34,36
+3000-5000Hz_R10,1,0.463038780991779,env_low_order_ratio|env_harmonic_ratio|skewness|env_centroid_order|env_entropy|kurtosis_pearson|peak_to_peak|mean_abs,36,34
+3000-5000Hz_R20,0,0.524188462523741,env_harmonic_ratio|env_low_order_ratio|skewness|peak_to_peak|env_entropy|crest_factor|env_centroid_order|ac_rms,34,36
+3000-5000Hz_R20,1,0.488623981084386,env_low_order_ratio|env_harmonic_ratio|env_centroid_order|skewness|env_peak_order|env_entropy|crest_factor|peak_to_peak,36,34

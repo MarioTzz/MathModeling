@@ -1,0 +1,48 @@
+{
+  "source_files": 116,
+  "target_files": 16,
+  "routes": {
+    "main": {
+      "windows": 996,
+      "raw_six_formula_max_absolute_error": 4.973799150320701e-13,
+      "scale_max_absolute_error": 5.400124791776761e-13,
+      "fit_files": 70
+    },
+    "baseline": {
+      "windows": 707,
+      "raw_six_formula_max_absolute_error": 5.115907697472721e-13,
+      "scale_max_absolute_error": 5.968558980384842e-13,
+      "fit_files": 70
+    }
+  },
+  "file_descriptors": {
+    "files": 132,
+    "dimensions": 16,
+    "median_iqr_max_absolute_error": 3.7125857943465235e-13,
+    "scale_max_absolute_error": 2.9700686354772188e-12
+  },
+  "fold_class_support": {
+    "0": {
+      "OR": 18,
+      "B": 9,
+      "IR": 8,
+      "N": 1
+    },
+    "1": {
+      "OR": 17,
+      "B": 9,
+      "IR": 7,
+      "N": 1
+    }
+  },
+  "output_hash_mismatches": [],
+  "author_payload_mismatches": [],
+  "sha256": {
+    "问题一_求解.py": "f26da29d93a84cadddbe7d43a1f3285e14b43811add08a367de18d273251f47d",
+    "utils/q1_model.py": "22c190f6f962ac248f3104a6e1d7bafba402d8c38b2099b72a9af802345758ea",
+    "tests/test_q1_model.py": "de2965db70908f8b738191522b9af8d85a23564c83be4b450dd19d008b051b1e",
+    "configs/q1.json": "4e3f02da34b1c3974ed081f3d74564e60482ad84e27897f4419cf81ec3c1fa2d",
+    "问题一_数学模型与求解说明.md": "7118ff8ba27e89682eb3efcd731da2cf902f03a7baff343e9ec31d08f1594997"
+  },
+  "status": "PASS"
+}

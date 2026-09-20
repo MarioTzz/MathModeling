@@ -1,0 +1,108 @@
+
+--- figures/q1/flow_overall_model.png ---
+  category: raster  ext: png  size: 212615 B
+  pixels: 2160x1305  dpi: (299.9994, 299.9994)
+  [PASS] 无问题。
+
+--- figures/q1/flow_q1_model.png ---
+  category: raster  ext: png  size: 225375 B
+  pixels: 2160x1365  dpi: (299.9994, 299.9994)
+  [PASS] 无问题。
+
+--- figures/q1/process_q1_candidate_scores.png ---
+  category: raster  ext: png  size: 122578 B
+  pixels: 2160x990  dpi: (299.9994, 299.9994)
+  [PASS] 无问题。
+
+--- figures/q1/process_q1_demodulation.png ---
+  category: raster  ext: png  size: 303525 B
+  pixels: 2160x1560  dpi: (299.9994, 299.9994)
+  [PASS] 无问题。
+
+--- figures/q1/process_q1_stability.png ---
+  category: raster  ext: png  size: 92815 B
+  pixels: 2160x1170  dpi: (299.9994, 299.9994)
+  [PASS] 无问题。
+
+--- figures/q1/raw_q1_acquisition.png ---
+  category: raster  ext: png  size: 70068 B
+  pixels: 2160x900  dpi: (299.9994, 299.9994)
+  [PASS] 无问题。
+
+--- figures/q1/raw_q1_class_split.png ---
+  category: raster  ext: png  size: 59698 B
+  pixels: 2160x930  dpi: (299.9994, 299.9994)
+  [PASS] 无问题。
+
+--- figures/q1/raw_q1_waveforms.png ---
+  category: raster  ext: png  size: 484565 B
+  pixels: 2160x1800  dpi: (299.9994, 299.9994)
+  [PASS] 无问题。
+
+--- figures/q1/result_q1_correlations.png ---
+  category: raster  ext: png  size: 243148 B
+  pixels: 2160x1275  dpi: (299.9994, 299.9994)
+  [PASS] 无问题。
+
+--- figures/q1/result_q1_feature_distributions.png ---
+  category: raster  ext: png  size: 267732 B
+  pixels: 2160x2160  dpi: (299.9994, 299.9994)
+  [PASS] 无问题。
+
+--- figures/q1/result_q1_rpm_sensitivity.png ---
+  category: raster  ext: png  size: 163168 B
+  pixels: 2160x960  dpi: (299.9994, 299.9994)
+  [PASS] 无问题。
+
+--- figures/q1/result_q1_source_mechanism.png ---
+  category: raster  ext: png  size: 290044 B
+  pixels: 2160x1710  dpi: (299.9994, 299.9994)
+  [PASS] 无问题。
+
+--- figures/q1/flow_overall_model.svg ---
+  category: vector  ext: svg  size: 9228 B
+  [PASS] 无问题。
+
+--- figures/q1/flow_q1_model.svg ---
+  category: vector  ext: svg  size: 10660 B
+  [PASS] 无问题。
+
+--- figures/q1/process_q1_candidate_scores.svg ---
+  category: vector  ext: svg  size: 63646 B
+  [PASS] 无问题。
+
+--- figures/q1/process_q1_demodulation.svg ---
+  category: vector  ext: svg  size: 65927 B
+  [PASS] 无问题。
+
+--- figures/q1/process_q1_stability.svg ---
+  category: vector  ext: svg  size: 14170 B
+  [PASS] 无问题。
+
+--- figures/q1/raw_q1_acquisition.svg ---
+  category: vector  ext: svg  size: 63817 B
+  [PASS] 无问题。
+
+--- figures/q1/raw_q1_class_split.svg ---
+  category: vector  ext: svg  size: 83053 B
+  [PASS] 无问题。
+
+--- figures/q1/raw_q1_waveforms.svg ---
+  category: vector  ext: svg  size: 406014 B
+  [PASS] 无问题。
+
+--- figures/q1/result_q1_correlations.svg ---
+  category: vector  ext: svg  size: 91077 B
+  [PASS] 无问题。
+
+--- figures/q1/result_q1_feature_distributions.svg ---
+  category: vector  ext: svg  size: 150619 B
+  [PASS] 无问题。
+
+--- figures/q1/result_q1_rpm_sensitivity.svg ---
+  category: vector  ext: svg  size: 12405 B
+  [PASS] 无问题。
+
+--- figures/q1/result_q1_source_mechanism.svg ---
+  category: vector  ext: svg  size: 46625 B
+  [PASS] 无问题。

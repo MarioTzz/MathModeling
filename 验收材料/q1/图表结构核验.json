@@ -1,0 +1,154 @@
+{
+  "ok": true,
+  "directory": "/Users/mariozz/MathModeling/figures/q1",
+  "questions": [
+    "q1"
+  ],
+  "files": {
+    "flow_overall_model.png": {
+      "width_px": 2160,
+      "height_px": 1305,
+      "dpi_x": 299.9994,
+      "dpi_y": 299.9994,
+      "width_in": 7.200014400028801,
+      "height_in": 4.3500087000174
+    },
+    "flow_overall_model.svg": {
+      "text_count": 13,
+      "embedded_raster": false
+    },
+    "flow_q1_model.png": {
+      "width_px": 2160,
+      "height_px": 1365,
+      "dpi_x": 299.9994,
+      "dpi_y": 299.9994,
+      "width_in": 7.200014400028801,
+      "height_in": 4.5500091000182
+    },
+    "flow_q1_model.svg": {
+      "text_count": 16,
+      "embedded_raster": false
+    },
+    "process_q1_candidate_scores.png": {
+      "width_px": 2160,
+      "height_px": 990,
+      "dpi_x": 299.9994,
+      "dpi_y": 299.9994,
+      "width_in": 7.200014400028801,
+      "height_in": 3.3000066000132002
+    },
+    "process_q1_candidate_scores.svg": {
+      "text_count": 28,
+      "embedded_raster": false
+    },
+    "process_q1_demodulation.png": {
+      "width_px": 2160,
+      "height_px": 1560,
+      "dpi_x": 299.9994,
+      "dpi_y": 299.9994,
+      "width_in": 7.200014400028801,
+      "height_in": 5.2000104000208
+    },
+    "process_q1_demodulation.svg": {
+      "text_count": 45,
+      "embedded_raster": false
+    },
+    "process_q1_stability.png": {
+      "width_px": 2160,
+      "height_px": 1170,
+      "dpi_x": 299.9994,
+      "dpi_y": 299.9994,
+      "width_in": 7.200014400028801,
+      "height_in": 3.9000078000156004
+    },
+    "process_q1_stability.svg": {
+      "text_count": 21,
+      "embedded_raster": false
+    },
+    "raw_q1_acquisition.png": {
+      "width_px": 2160,
+      "height_px": 900,
+      "dpi_x": 299.9994,
+      "dpi_y": 299.9994,
+      "width_in": 7.200014400028801,
+      "height_in": 3.000006000012
+    },
+    "raw_q1_acquisition.svg": {
+      "text_count": 36,
+      "embedded_raster": false
+    },
+    "raw_q1_class_split.png": {
+      "width_px": 2160,
+      "height_px": 930,
+      "dpi_x": 299.9994,
+      "dpi_y": 299.9994,
+      "width_in": 7.200014400028801,
+      "height_in": 3.1000062000124
+    },
+    "raw_q1_class_split.svg": {
+      "text_count": 30,
+      "embedded_raster": false
+    },
+    "raw_q1_waveforms.png": {
+      "width_px": 2160,
+      "height_px": 1800,
+      "dpi_x": 299.9994,
+      "dpi_y": 299.9994,
+      "width_in": 7.200014400028801,
+      "height_in": 6.000012000024
+    },
+    "raw_q1_waveforms.svg": {
+      "text_count": 79,
+      "embedded_raster": false
+    },
+    "result_q1_correlations.png": {
+      "width_px": 2160,
+      "height_px": 1275,
+      "dpi_x": 299.9994,
+      "dpi_y": 299.9994,
+      "width_in": 7.200014400028801,
+      "height_in": 4.2500085000170005
+    },
+    "result_q1_correlations.svg": {
+      "text_count": 90,
+      "embedded_raster": false
+    },
+    "result_q1_feature_distributions.png": {
+      "width_px": 2160,
+      "height_px": 2160,
+      "dpi_x": 299.9994,
+      "dpi_y": 299.9994,
+      "width_in": 7.200014400028801,
+      "height_in": 7.200014400028801
+    },
+    "result_q1_feature_distributions.svg": {
+      "text_count": 124,
+      "embedded_raster": false
+    },
+    "result_q1_rpm_sensitivity.png": {
+      "width_px": 2160,
+      "height_px": 960,
+      "dpi_x": 299.9994,
+      "dpi_y": 299.9994,
+      "width_in": 7.200014400028801,
+      "height_in": 3.2000064000128003
+    },
+    "result_q1_rpm_sensitivity.svg": {
+      "text_count": 15,
+      "embedded_raster": false
+    },
+    "result_q1_source_mechanism.png": {
+      "width_px": 2160,
+      "height_px": 1710,
+      "dpi_x": 299.9994,
+      "dpi_y": 299.9994,
+      "width_in": 7.200014400028801,
+      "height_in": 5.700011400022801
+    },
+    "result_q1_source_mechanism.svg": {
+      "text_count": 69,
+      "embedded_raster": false
+    }
+  },
+  "issues": []
+}

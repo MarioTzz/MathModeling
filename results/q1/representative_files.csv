@@ -1,0 +1,6 @@
+﻿file_id,label,rule
+source/48kHz_Normal_data/N_2_(1750rpm).mat,N,first_training_file_per_class_or_first_target
+source/12kHz_DE_data/OR/Centered/0007/OR007@6_0.mat,OR,first_training_file_per_class_or_first_target
+source/12kHz_DE_data/IR/0007/IR007_0.mat,IR,first_training_file_per_class_or_first_target
+source/12kHz_DE_data/B/0007/B007_2.mat,B,first_training_file_per_class_or_first_target
+target/A.mat,,first_training_file_per_class_or_first_target

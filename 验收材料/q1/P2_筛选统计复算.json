@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "training_files_per_variant": 70,
+  "variants": 6,
+  "cross_validation_scores": 12,
+  "max_score_absolute_error": 7.771561172376096e-16,
+  "chosen_variant": "1500-3000Hz_R20",
+  "bootstrap_repeats": 100,
+  "selection_frequencies_exact": true,
+  "max_fisher_absolute_error": 3.552713678800501e-15,
+  "thresholds_verified": [
+    "0.5",
+    "0.6",
+    "0.7"
+  ],
+  "normal_training_files": 2
+}

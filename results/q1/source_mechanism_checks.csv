@@ -1,0 +1,5 @@
+﻿file_id,label,windows,dominant_order_1_to_10,theoretical_order,absolute_difference
+source/48kHz_Normal_data/N_2_(1750rpm).mat,N,11,2,,
+source/12kHz_DE_data/OR/Centered/0007/OR007@6_0.mat,OR,11,3.6,3.58477553675992,0.0152244632400782
+source/12kHz_DE_data/IR/0007/IR007_0.mat,IR,11,5.4,5.41522446324008,0.0152244632400773
+source/12kHz_DE_data/B/0007/B007_2.mat,B,11,5.2,4.71344340142969,0.486556598570306

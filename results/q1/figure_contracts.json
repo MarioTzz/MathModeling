@@ -1,0 +1,176 @@
+{
+  "style": {
+    "font": "Lantinghei SC",
+    "size_inches": [
+      7.2,
+      4.464
+    ],
+    "colors": [
+      "#0072B2",
+      "#E69F00",
+      "#009E73",
+      "#D55E00",
+      "#CC79A7",
+      "#56B4E9",
+      "#6B7280"
+    ]
+  },
+  "figures": [
+    {
+      "figure": "raw_q1_class_split",
+      "question": "q1",
+      "goal": "正常状态独立文件稀缺",
+      "unit_of_analysis": "116个源文件",
+      "evidence": "files.csv / split / label",
+      "caption": "每柱是独立原文件数，核心源域训练/验证/测试为70/23/23；正常类为2/1/1。",
+      "width_inches": 7.2,
+      "height_inches": 3.1,
+      "dpi": 300,
+      "layout_issues": [],
+      "design_issues": []
+    },
+    {
+      "figure": "raw_q1_acquisition",
+      "question": "q1",
+      "goal": "源目标转速与采样条件不同",
+      "unit_of_analysis": "132个文件，重叠点未增加抖动",
+      "evidence": "files.csv",
+      "caption": "目标转速600 rpm来自题面近似值。点可重叠；右图仅显示主通道名义采样率，不推断其他通道的时钟。",
+      "width_inches": 7.2,
+      "height_inches": 3.0,
+      "dpi": 300,
+      "layout_issues": [],
+      "design_issues": []
+    },
+    {
+      "figure": "raw_q1_waveforms",
+      "question": "q1",
+      "goal": "代表波形的冲击形状和幅值",
+      "unit_of_analysis": "每类首个训练文件及首个目标文件",
+      "evidence": "representative_files.csv / 原始MAT",
+      "caption": "各文件截取0.1—0.3秒；子图纵轴独立，未做幅值归一。单位未知，不标为g。",
+      "width_inches": 7.2,
+      "height_inches": 6.0,
+      "dpi": 300,
+      "layout_issues": [],
+      "design_issues": []
+    },
+    {
+      "figure": "process_q1_candidate_scores",
+      "question": "q1",
+      "goal": "频带和转数由训练内统计选定",
+      "unit_of_analysis": "70个源训练文件二折",
+      "evidence": "candidate_scores.csv / training_inner_folds.csv",
+      "caption": "每格为当前留出折上所选特征的平均log(1+Fisher分数)。正常类每折只有1个文件；分数不是准确率。",
+      "width_inches": 7.2,
+      "height_inches": 3.3,
+      "dpi": 300,
+      "layout_issues": [],
+      "design_issues": []
+    },
+    {
+      "figure": "process_q1_demodulation",
+      "question": "q1",
+      "goal": "先解调再降采样和换算阶次",
+      "unit_of_analysis": "source/12kHz_DE_data/OR/Centered/0007/OR007@6_0.mat",
+      "evidence": "原始MAT / prepare_record / order_spectrum",
+      "caption": "上两图为0.1—0.2秒，同一外圈训练文件；下图为首个完整20转窗。虚线只用于SKF6205源域机理参照。",
+      "width_inches": 7.2,
+      "height_inches": 5.2,
+      "dpi": 300,
+      "layout_issues": [],
+      "design_issues": []
+    },
+    {
+      "figure": "process_q1_stability",
+      "question": "q1",
+      "goal": "特征需要稳定且不高度冗余",
+      "unit_of_analysis": "70个源训练文件，100次文件重采样",
+      "evidence": "feature_selection.csv",
+      "caption": "蓝色为最终保留，灰色斜纹为未保留；最终还需满足Spearman绝对相关≤0.9。比例不是置信概率。",
+      "width_inches": 7.2,
+      "height_inches": 3.9,
+      "dpi": 300,
+      "layout_issues": [],
+      "design_issues": []
+    },
+    {
+      "figure": "result_q1_feature_distributions",
+      "question": "q1",
+      "goal": "各类特征分布及正常类样本限制",
+      "unit_of_analysis": "70个源训练文件，每点1文件",
+      "evidence": "window_features_selected_scaled.csv",
+      "caption": "点为文件内窗口的特征中位数，短横线为各类别文件中位数；横向抖动仅帮助阅读。N仅2文件，不估计其总体区间。",
+      "width_inches": 7.2,
+      "height_inches": 7.2,
+      "dpi": 300,
+      "layout_issues": [],
+      "design_issues": []
+    },
+    {
+      "figure": "result_q1_correlations",
+      "question": "q1",
+      "goal": "保留特征的文件级冗余程度",
+      "unit_of_analysis": "70个源训练文件中位数",
+      "evidence": "selected_feature_correlations.csv",
+      "caption": "只在源训练文件上计算；对角线为1。相关性小并不自动说明存在分类增益。",
+      "width_inches": 7.2,
+      "height_inches": 4.25,
+      "dpi": 300,
+      "layout_issues": [],
+      "design_issues": []
+    },
+    {
+      "figure": "result_q1_rpm_sensitivity",
+      "question": "q1",
+      "goal": "两种窗口对转速近似误差的响应",
+      "unit_of_analysis": "16个目标文件，每个情景16个文件漂移",
+      "evidence": "rpm_sensitivity.csv / common_scale_drift",
+      "caption": "线为16文件中位数，阴影为25%—75%分位区间；两方案用相同主线尺度比较。0扰动为自身基准；漂移不是诊断错误率。",
+      "width_inches": 7.2,
+      "height_inches": 3.2,
+      "dpi": 300,
+      "layout_issues": [],
+      "design_issues": []
+    },
+    {
+      "figure": "result_q1_source_mechanism",
+      "question": "q1",
+      "goal": "源域代表谱峰与题面机理的关系",
+      "unit_of_analysis": "每类首个训练文件，完整窗谱质量平均",
+      "evidence": "source_mechanism_checks.csv / representative_files.csv",
+      "caption": "各窗先单位质量归一，再取文件内平均。虚线是题面故障基阶，不要求最大峰必然出现在该位置；正常类不画故障线。",
+      "width_inches": 7.2,
+      "height_inches": 5.7,
+      "dpi": 300,
+      "layout_issues": [],
+      "design_issues": []
+    },
+    {
+      "figure": "flow_overall_model",
+      "question": "q1",
+      "goal": "已完成与计划阶段的真实边界",
+      "unit_of_analysis": "研究阶段",
+      "evidence": "本次授权与创新建模方案",
+      "caption": "实线框为本次问题一；虚线框为后续计划。两条路线共享问题一输入，本阶段不执行分类或运输。",
+      "width_inches": 7.2,
+      "height_inches": 4.35,
+      "dpi": 300,
+      "layout_issues": [],
+      "design_issues": []
+    },
+    {
+      "figure": "flow_q1_model",
+      "question": "q1",
+      "goal": "问题一公式到实际数据出口",
+      "unit_of_analysis": "文件与相关窗口",
+      "evidence": "问题一_求解.py / utils/q1_model.py",
+      "caption": "参数拟合与数据变换分开；原文件划分先于切窗。基线与主线冻结同一频带和特征集合。",
+      "width_inches": 7.2,
+      "height_inches": 4.55,
+      "dpi": 300,
+      "layout_issues": [],
+      "design_issues": []
+    }
+  ]
+}

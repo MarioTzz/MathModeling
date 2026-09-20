@@ -1,0 +1,944 @@
+{
+  "source": "<DataFrame>",
+  "n_rows": 132,
+  "n_cols": 16,
+  "columns": {
+    "file_id": {
+      "type": "text",
+      "n_total": 132,
+      "n_null": 0,
+      "missing_rate": 0.0
+    },
+    "domain": {
+      "type": "categorical",
+      "n_total": 132,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 132,
+      "n_unique": 2,
+      "categories": [
+        [
+          "source",
+          116
+        ],
+        [
+          "target",
+          16
+        ]
+      ],
+      "min_group_n": 16,
+      "max_group_n": 116,
+      "small_groups_flag": false
+    },
+    "label": {
+      "type": "categorical",
+      "n_total": 132,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 132,
+      "n_unique": 5,
+      "categories": [
+        [
+          "OR",
+          56
+        ],
+        [
+          "B",
+          28
+        ],
+        [
+          "IR",
+          28
+        ],
+        [
+          "",
+          16
+        ],
+        [
+          "N",
+          4
+        ]
+      ],
+      "min_group_n": 4,
+      "max_group_n": 56,
+      "small_groups_flag": true
+    },
+    "split": {
+      "type": "categorical",
+      "n_total": 132,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 132,
+      "n_unique": 4,
+      "categories": [
+        [
+          "train",
+          70
+        ],
+        [
+          "validation",
+          23
+        ],
+        [
+          "test",
+          23
+        ],
+        [
+          "target",
+          16
+        ]
+      ],
+      "min_group_n": 16,
+      "max_group_n": 70,
+      "small_groups_flag": false
+    },
+    "ac_rms": {
+      "type": "continuous",
+      "n_total": 132,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 132,
+      "mean": 1.747386506945135,
+      "median": 0.3744937076981853,
+      "sd": 4.987148486540752,
+      "min": 0.06313994984042265,
+      "max": 31.59287959974146,
+      "skewness": 4.6417292915426485,
+      "skew_label": "highly skewed",
+      "n_outliers_iqr": 17,
+      "outlier_lo": -0.7329779466800014,
+      "outlier_hi": 1.667681886029408,
+      "needs_log_axis": true
+    },
+    "mean_abs": {
+      "type": "continuous",
+      "n_total": 132,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 132,
+      "mean": 1.1106391209726003,
+      "median": 0.22935075177735129,
+      "sd": 2.8581173295025537,
+      "min": 0.05056170344721719,
+      "max": 18.031088253575962,
+      "skewness": 4.066510464538052,
+      "skew_label": "highly skewed",
+      "n_outliers_iqr": 18,
+      "outlier_lo": -0.5107362257150738,
+      "outlier_hi": 1.165234258090531,
+      "needs_log_axis": true
+    },
+    "peak_to_peak": {
+      "type": "continuous",
+      "n_total": 132,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 132,
+      "mean": 30.35560317204913,
+      "median": 5.201024788423154,
+      "sd": 113.00444849524985,
+      "min": 0.48774276923076926,
+      "max": 826.5711923109375,
+      "skewness": 5.410897487950435,
+      "skew_label": "highly skewed",
+      "n_outliers_iqr": 13,
+      "outlier_lo": -7.6843808453093825,
+      "outlier_hi": 20.29384824051896,
+      "needs_log_axis": true
+    },
+    "crest_factor": {
+      "type": "continuous",
+      "n_total": 132,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 132,
+      "mean": 6.611592293402914,
+      "median": 5.721060450917037,
+      "sd": 2.623900779044469,
+      "min": 3.597944703729243,
+      "max": 16.607325405157795,
+      "skewness": 0.9820978572062792,
+      "skew_label": "moderately skewed",
+      "n_outliers_iqr": 1,
+      "outlier_lo": -2.8877760115825284,
+      "outlier_hi": 16.384945192390987,
+      "needs_log_axis": false
+    },
+    "kurtosis_pearson": {
+      "type": "continuous",
+      "n_total": 132,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 132,
+      "mean": 9.809555101357088,
+      "median": 6.785610719129149,
+      "sd": 8.735509889444273,
+      "min": 2.748593829970596,
+      "max": 40.708655396620614,
+      "skewness": 1.513568505712079,
+      "skew_label": "highly skewed",
+      "n_outliers_iqr": 9,
+      "outlier_lo": -9.609395811299583,
+      "outlier_hi": 25.553171928676946,
+      "needs_log_axis": false
+    },
+    "skewness": {
+      "type": "continuous",
+      "n_total": 132,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 132,
+      "mean": 0.016409003090263795,
+      "median": 0.020243755102378986,
+      "sd": 0.13069836815098254,
+      "min": -0.4498980261245297,
+      "max": 0.3372171423643496,
+      "skewness": -1.0607116539742447,
+      "skew_label": "highly skewed",
+      "n_outliers_iqr": 19,
+      "outlier_lo": -0.14265631915129634,
+      "outlier_hi": 0.20956012624970433,
+      "needs_log_axis": false
+    },
+    "env_entropy": {
+      "type": "continuous",
+      "n_total": 132,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 132,
+      "mean": 0.6553907775592493,
+      "median": 0.6437649269205428,
+      "sd": 0.1733456728162804,
+      "min": 0.28333030878337384,
+      "max": 0.9247164383809524,
+      "skewness": -0.209281897730403,
+      "skew_label": "approximately symmetric",
+      "n_outliers_iqr": 0,
+      "outlier_lo": 0.0913426794142772,
+      "outlier_hi": 1.2468365273405442,
+      "needs_log_axis": false
+    },
+    "env_centroid_order": {
+      "type": "continuous",
+      "n_total": 132,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 132,
+      "mean": 5.1154570509971915,
+      "median": 4.759375157364984,
+      "sd": 1.7980086144891878,
+      "min": 2.4439750545063808,
+      "max": 10.321677254724351,
+      "skewness": 0.8586513707473554,
+      "skew_label": "moderately skewed",
+      "n_outliers_iqr": 2,
+      "outlier_lo": 0.42037976297929225,
+      "outlier_hi": 9.665999822861522,
+      "needs_log_axis": false
+    },
+    "env_spread_order": {
+      "type": "continuous",
+      "n_total": 132,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 132,
+      "mean": 3.676987114934849,
+      "median": 3.5030618006005967,
+      "sd": 1.0237822777721284,
+      "min": 1.8329749940893938,
+      "max": 6.057558356703113,
+      "skewness": 0.46532090671409465,
+      "skew_label": "approximately symmetric",
+      "n_outliers_iqr": 0,
+      "outlier_lo": 0.9285034262271483,
+      "outlier_hi": 6.395929585375235,
+      "needs_log_axis": false
+    },
+    "env_peak_order": {
+      "type": "continuous",
+      "n_total": 132,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 132,
+      "mean": 3.0409090909090906,
+      "median": 3.25,
+      "sd": 1.8619104751911808,
+      "min": 1.0,
+      "max": 8.3,
+      "skewness": 0.9039092684003815,
+      "skew_label": "moderately skewed",
+      "n_outliers_iqr": 7,
+      "outlier_lo": -2.0250000000000004,
+      "outlier_hi": 6.975,
+      "needs_log_axis": false
+    },
+    "env_harmonic_ratio": {
+      "type": "continuous",
+      "n_total": 132,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 132,
+      "mean": 0.31209465240611206,
+      "median": 0.24516029232498301,
+      "sd": 0.19256853311986175,
+      "min": 0.042697070850919255,
+      "max": 0.8376609258123132,
+      "skewness": 1.1795556973312835,
+      "skew_label": "highly skewed",
+      "n_outliers_iqr": 8,
+      "outlier_lo": -0.13576387980564658,
+      "outlier_hi": 0.698310695483238,
+      "needs_log_axis": false
+    },
+    "env_low_order_ratio": {
+      "type": "continuous",
+      "n_total": 132,
+      "n_null": 0,
+      "missing_rate": 0.0,
+      "n": 132,
+      "mean": 0.2902409654672106,
+      "median": 0.26485506353525157,
+      "sd": 0.15062935885979048,
+      "min": 0.04951470228064472,
+      "max": 0.6151494886024972,
+      "skewness": 0.3939368881215892,
+      "skew_label": "approximately symmetric",
+      "n_outliers_iqr": 0,
+      "outlier_lo": -0.20207396395913882,
+      "outlier_hi": 0.7847798660517182,
+      "needs_log_axis": false
+    }
+  },
+  "correlation": {
+    "columns": [
+      "ac_rms",
+      "mean_abs",
+      "peak_to_peak",
+      "crest_factor",
+      "kurtosis_pearson",
+      "skewness",
+      "env_entropy",
+      "env_centroid_order",
+      "env_spread_order",
+      "env_peak_order",
+      "env_harmonic_ratio",
+      "env_low_order_ratio"
+    ],
+    "matrix": {
+      "ac_rms": {
+        "ac_rms": 1.0,
+        "mean_abs": 0.982,
+        "peak_to_peak": 0.965,
+        "crest_factor": 0.301,
+        "kurtosis_pearson": 0.347,
+        "skewness": 0.01,
+        "env_entropy": 0.085,
+        "env_centroid_order": 0.351,
+        "env_spread_order": 0.327,
+        "env_peak_order": 0.061,
+        "env_harmonic_ratio": 0.061,
+        "env_low_order_ratio": -0.118
+      },
+      "mean_abs": {
+        "ac_rms": 0.982,
+        "mean_abs": 1.0,
+        "peak_to_peak": 0.909,
+        "crest_factor": 0.243,
+        "kurtosis_pearson": 0.27,
+        "skewness": -0.012,
+        "env_entropy": 0.102,
+        "env_centroid_order": 0.426,
+        "env_spread_order": 0.363,
+        "env_peak_order": 0.145,
+        "env_harmonic_ratio": 0.057,
+        "env_low_order_ratio": -0.163
+      },
+      "peak_to_peak": {
+        "ac_rms": 0.965,
+        "mean_abs": 0.909,
+        "peak_to_peak": 1.0,
+        "crest_factor": 0.397,
+        "kurtosis_pearson": 0.44,
+        "skewness": 0.035,
+        "env_entropy": 0.076,
+        "env_centroid_order": 0.26,
+        "env_spread_order": 0.284,
+        "env_peak_order": -0.059,
+        "env_harmonic_ratio": 0.035,
+        "env_low_order_ratio": -0.061
+      },
+      "crest_factor": {
+        "ac_rms": 0.301,
+        "mean_abs": 0.243,
+        "peak_to_peak": 0.397,
+        "crest_factor": 1.0,
+        "kurtosis_pearson": 0.905,
+        "skewness": -0.143,
+        "env_entropy": -0.082,
+        "env_centroid_order": -0.353,
+        "env_spread_order": -0.262,
+        "env_peak_order": -0.391,
+        "env_harmonic_ratio": -0.077,
+        "env_low_order_ratio": 0.502
+      },
+      "kurtosis_pearson": {
+        "ac_rms": 0.347,
+        "mean_abs": 0.27,
+        "peak_to_peak": 0.44,
+        "crest_factor": 0.905,
+        "kurtosis_pearson": 1.0,
+        "skewness": -0.244,
+        "env_entropy": -0.182,
+        "env_centroid_order": -0.385,
+        "env_spread_order": -0.342,
+        "env_peak_order": -0.368,
+        "env_harmonic_ratio": -0.023,
+        "env_low_order_ratio": 0.486
+      },
+      "skewness": {
+        "ac_rms": 0.01,
+        "mean_abs": -0.012,
+        "peak_to_peak": 0.035,
+        "crest_factor": -0.143,
+        "kurtosis_pearson": -0.244,
+        "skewness": 1.0,
+        "env_entropy": -0.083,
+        "env_centroid_order": -0.092,
+        "env_spread_order": -0.075,
+        "env_peak_order": 0.009,
+        "env_harmonic_ratio": 0.08,
+        "env_low_order_ratio": -0.063
+      },
+      "env_entropy": {
+        "ac_rms": 0.085,
+        "mean_abs": 0.102,
+        "peak_to_peak": 0.076,
+        "crest_factor": -0.082,
+        "kurtosis_pearson": -0.182,
+        "skewness": -0.083,
+        "env_entropy": 1.0,
+        "env_centroid_order": 0.463,
+        "env_spread_order": 0.773,
+        "env_peak_order": -0.102,
+        "env_harmonic_ratio": -0.832,
+        "env_low_order_ratio": 0.005
+      },
+      "env_centroid_order": {
+        "ac_rms": 0.351,
+        "mean_abs": 0.426,
+        "peak_to_peak": 0.26,
+        "crest_factor": -0.353,
+        "kurtosis_pearson": -0.385,
+        "skewness": -0.092,
+        "env_entropy": 0.463,
+        "env_centroid_order": 1.0,
+        "env_spread_order": 0.824,
+        "env_peak_order": 0.463,
+        "env_harmonic_ratio": -0.096,
+        "env_low_order_ratio": -0.729
+      },
+      "env_spread_order": {
+        "ac_rms": 0.327,
+        "mean_abs": 0.363,
+        "peak_to_peak": 0.284,
+        "crest_factor": -0.262,
+        "kurtosis_pearson": -0.342,
+        "skewness": -0.075,
+        "env_entropy": 0.773,
+        "env_centroid_order": 0.824,
+        "env_spread_order": 1.0,
+        "env_peak_order": 0.083,
+        "env_harmonic_ratio": -0.449,
+        "env_low_order_ratio": -0.358
+      },
+      "env_peak_order": {
+        "ac_rms": 0.061,
+        "mean_abs": 0.145,
+        "peak_to_peak": -0.059,
+        "crest_factor": -0.391,
+        "kurtosis_pearson": -0.368,
+        "skewness": 0.009,
+        "env_entropy": -0.102,
+        "env_centroid_order": 0.463,
+        "env_spread_order": 0.083,
+        "env_peak_order": 1.0,
+        "env_harmonic_ratio": 0.13,
+        "env_low_order_ratio": -0.591
+      },
+      "env_harmonic_ratio": {
+        "ac_rms": 0.061,
+        "mean_abs": 0.057,
+        "peak_to_peak": 0.035,
+        "crest_factor": -0.077,
+        "kurtosis_pearson": -0.023,
+        "skewness": 0.08,
+        "env_entropy": -0.832,
+        "env_centroid_order": -0.096,
+        "env_spread_order": -0.449,
+        "env_peak_order": 0.13,
+        "env_harmonic_ratio": 1.0,
+        "env_low_order_ratio": -0.355
+      },
+      "env_low_order_ratio": {
+        "ac_rms": -0.118,
+        "mean_abs": -0.163,
+        "peak_to_peak": -0.061,
+        "crest_factor": 0.502,
+        "kurtosis_pearson": 0.486,
+        "skewness": -0.063,
+        "env_entropy": 0.005,
+        "env_centroid_order": -0.729,
+        "env_spread_order": -0.358,
+        "env_peak_order": -0.591,
+        "env_harmonic_ratio": -0.355,
+        "env_low_order_ratio": 1.0
+      }
+    },
+    "pairs_sorted": [
+      {
+        "a": "ac_rms",
+        "b": "mean_abs",
+        "r": 0.9824835367314223,
+        "magnitude": "very strong"
+      },
+      {
+        "a": "ac_rms",
+        "b": "peak_to_peak",
+        "r": 0.9651360896982676,
+        "magnitude": "very strong"
+      },
+      {
+        "a": "mean_abs",
+        "b": "peak_to_peak",
+        "r": 0.9092929151878084,
+        "magnitude": "very strong"
+      },
+      {
+        "a": "crest_factor",
+        "b": "kurtosis_pearson",
+        "r": 0.9050095637832667,
+        "magnitude": "very strong"
+      },
+      {
+        "a": "env_entropy",
+        "b": "env_harmonic_ratio",
+        "r": -0.8324356371194908,
+        "magnitude": "very strong"
+      },
+      {
+        "a": "env_centroid_order",
+        "b": "env_spread_order",
+        "r": 0.8236294554005325,
+        "magnitude": "very strong"
+      },
+      {
+        "a": "env_entropy",
+        "b": "env_spread_order",
+        "r": 0.7734349889927181,
+        "magnitude": "very strong"
+      },
+      {
+        "a": "env_centroid_order",
+        "b": "env_low_order_ratio",
+        "r": -0.7287146518066692,
+        "magnitude": "very strong"
+      },
+      {
+        "a": "env_peak_order",
+        "b": "env_low_order_ratio",
+        "r": -0.5910428198422444,
+        "magnitude": "strong"
+      },
+      {
+        "a": "crest_factor",
+        "b": "env_low_order_ratio",
+        "r": 0.5024734912064349,
+        "magnitude": "strong"
+      },
+      {
+        "a": "kurtosis_pearson",
+        "b": "env_low_order_ratio",
+        "r": 0.48560511429855685,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "env_centroid_order",
+        "b": "env_peak_order",
+        "r": 0.46321914545386206,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "env_entropy",
+        "b": "env_centroid_order",
+        "r": 0.4629815549780422,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "env_spread_order",
+        "b": "env_harmonic_ratio",
+        "r": -0.4490032547017806,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "peak_to_peak",
+        "b": "kurtosis_pearson",
+        "r": 0.4396159355785494,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "mean_abs",
+        "b": "env_centroid_order",
+        "r": 0.4260623335216245,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "peak_to_peak",
+        "b": "crest_factor",
+        "r": 0.3967521153146119,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "crest_factor",
+        "b": "env_peak_order",
+        "r": -0.39067754992883935,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "kurtosis_pearson",
+        "b": "env_centroid_order",
+        "r": -0.38466631903302956,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "kurtosis_pearson",
+        "b": "env_peak_order",
+        "r": -0.3675502336690663,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "mean_abs",
+        "b": "env_spread_order",
+        "r": 0.36265330456341277,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "env_spread_order",
+        "b": "env_low_order_ratio",
+        "r": -0.3579347415448193,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "env_harmonic_ratio",
+        "b": "env_low_order_ratio",
+        "r": -0.3551711547188696,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "crest_factor",
+        "b": "env_centroid_order",
+        "r": -0.35320286113929433,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "ac_rms",
+        "b": "env_centroid_order",
+        "r": 0.35133474348873306,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "ac_rms",
+        "b": "kurtosis_pearson",
+        "r": 0.34730858322352776,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "kurtosis_pearson",
+        "b": "env_spread_order",
+        "r": -0.34235369610727134,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "ac_rms",
+        "b": "env_spread_order",
+        "r": 0.32740104164253436,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "ac_rms",
+        "b": "crest_factor",
+        "r": 0.30082634216262555,
+        "magnitude": "moderate"
+      },
+      {
+        "a": "peak_to_peak",
+        "b": "env_spread_order",
+        "r": 0.28376969325944745,
+        "magnitude": "weak"
+      },
+      {
+        "a": "mean_abs",
+        "b": "kurtosis_pearson",
+        "r": 0.2696593455986306,
+        "magnitude": "weak"
+      },
+      {
+        "a": "crest_factor",
+        "b": "env_spread_order",
+        "r": -0.26199792000261724,
+        "magnitude": "weak"
+      },
+      {
+        "a": "peak_to_peak",
+        "b": "env_centroid_order",
+        "r": 0.2596052061099174,
+        "magnitude": "weak"
+      },
+      {
+        "a": "kurtosis_pearson",
+        "b": "skewness",
+        "r": -0.2435808296684109,
+        "magnitude": "weak"
+      },
+      {
+        "a": "mean_abs",
+        "b": "crest_factor",
+        "r": 0.24303524822040654,
+        "magnitude": "weak"
+      },
+      {
+        "a": "kurtosis_pearson",
+        "b": "env_entropy",
+        "r": -0.18199989066156913,
+        "magnitude": "weak"
+      },
+      {
+        "a": "mean_abs",
+        "b": "env_low_order_ratio",
+        "r": -0.16307806563411217,
+        "magnitude": "weak"
+      },
+      {
+        "a": "mean_abs",
+        "b": "env_peak_order",
+        "r": 0.14527584099013074,
+        "magnitude": "weak"
+      },
+      {
+        "a": "crest_factor",
+        "b": "skewness",
+        "r": -0.14281206488635756,
+        "magnitude": "weak"
+      },
+      {
+        "a": "env_peak_order",
+        "b": "env_harmonic_ratio",
+        "r": 0.13028117662278135,
+        "magnitude": "weak"
+      },
+      {
+        "a": "ac_rms",
+        "b": "env_low_order_ratio",
+        "r": -0.11811647790581245,
+        "magnitude": "weak"
+      },
+      {
+        "a": "env_entropy",
+        "b": "env_peak_order",
+        "r": -0.1022852907268782,
+        "magnitude": "weak"
+      },
+      {
+        "a": "mean_abs",
+        "b": "env_entropy",
+        "r": 0.10217309681464065,
+        "magnitude": "weak"
+      },
+      {
+        "a": "env_centroid_order",
+        "b": "env_harmonic_ratio",
+        "r": -0.09598538804922604,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "skewness",
+        "b": "env_centroid_order",
+        "r": -0.09223898170096002,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "ac_rms",
+        "b": "env_entropy",
+        "r": 0.08478015386329427,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "env_spread_order",
+        "b": "env_peak_order",
+        "r": 0.08313037235788706,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "skewness",
+        "b": "env_entropy",
+        "r": -0.08299095851301051,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "crest_factor",
+        "b": "env_entropy",
+        "r": -0.0816756631380699,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "skewness",
+        "b": "env_harmonic_ratio",
+        "r": 0.07983659265846203,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "crest_factor",
+        "b": "env_harmonic_ratio",
+        "r": -0.07708950712406129,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "peak_to_peak",
+        "b": "env_entropy",
+        "r": 0.07578782179012737,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "skewness",
+        "b": "env_spread_order",
+        "r": -0.07455622594911321,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "skewness",
+        "b": "env_low_order_ratio",
+        "r": -0.06309412334463484,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "ac_rms",
+        "b": "env_peak_order",
+        "r": 0.0608854696780559,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "peak_to_peak",
+        "b": "env_low_order_ratio",
+        "r": -0.06074350940994104,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "ac_rms",
+        "b": "env_harmonic_ratio",
+        "r": 0.0607080202506933,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "peak_to_peak",
+        "b": "env_peak_order",
+        "r": -0.05897124717162369,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "mean_abs",
+        "b": "env_harmonic_ratio",
+        "r": 0.05710758506622983,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "peak_to_peak",
+        "b": "env_harmonic_ratio",
+        "r": 0.03455551221405786,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "peak_to_peak",
+        "b": "skewness",
+        "r": 0.034536211713662175,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "kurtosis_pearson",
+        "b": "env_harmonic_ratio",
+        "r": -0.023240384343286114,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "mean_abs",
+        "b": "skewness",
+        "r": -0.011771363599533001,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "ac_rms",
+        "b": "skewness",
+        "r": 0.009953700991609157,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "skewness",
+        "b": "env_peak_order",
+        "r": 0.008870989610766013,
+        "magnitude": "negligible"
+      },
+      {
+        "a": "env_entropy",
+        "b": "env_low_order_ratio",
+        "r": 0.0045573591871046395,
+        "magnitude": "negligible"
+      }
+    ]
+  },
+  "group_summary": {
+    "by": [
+      "domain",
+      "label"
+    ],
+    "n_groups": 5,
+    "min_n_per_group": 4,
+    "max_n_per_group": 56,
+    "median_n_per_group": 28,
+    "small_groups_flag": true,
+    "tiny_groups_flag": false,
+    "per_group_counts": [
+      [
+        "('source', 'B')",
+        28
+      ],
+      [
+        "('source', 'IR')",
+        28
+      ],
+      [
+        "('source', 'N')",
+        4
+      ],
+      [
+        "('source', 'OR')",
+        56
+      ],
+      [
+        "('target', '')",
+        16
+      ]
+    ]
+  },
+  "warnings": [
+    "列 'label' 至少有一个类别 n<10 — 小样本必须展示原始数据点，不要只画均值柱状图。"
+  ],
+  "suggestions": [
+    "分类 vs 连续，小样本（每组 n<10）→ **箱线图/小提琴图 + stripplot 叠加原始点**；**避免**只画均值柱状图，会掩盖分布。",
+    "≥3 个连续变量 → 相关性热力图（['ac_rms', 'mean_abs', 'peak_to_peak', 'crest_factor', 'kurtosis_pearson']）或 pairplot 散点矩阵",
+    "分类维度组合数 = 40（domain, label, split 全交叉），**一张图塞不下**——建议按某一维拆成多面板，或选择子集。",
+    "ac_rms 跨数个量级（0.0631 ~ 31.6）→ 用对数 y 轴",
+    "mean_abs 跨数个量级（0.0506 ~ 18）→ 用对数 y 轴",
+    "peak_to_peak 跨数个量级（0.488 ~ 827）→ 用对数 y 轴",
+    "kurtosis_pearson 高度偏态（skew=1.51）→ 考虑对数变换或小提琴图代替均值柱图",
+    "skewness 高度偏态（skew=-1.06）→ 考虑对数变换或小提琴图代替均值柱图",
+    "env_harmonic_ratio 高度偏态（skew=1.18）→ 考虑对数变换或小提琴图代替均值柱图"
+  ]
+}

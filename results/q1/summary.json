@@ -1,0 +1,89 @@
+{
+  "smoke": false,
+  "source_files": 116,
+  "target_files": 16,
+  "main_windows": 996,
+  "baseline_windows": 707,
+  "chosen_variant": "1500-3000Hz_R20",
+  "chosen_band_hz": [
+    1500,
+    3000
+  ],
+  "chosen_revolutions": 20,
+  "selected_features": [
+    "env_spread_order",
+    "env_entropy",
+    "env_centroid_order",
+    "skewness",
+    "peak_to_peak",
+    "env_harmonic_ratio",
+    "crest_factor",
+    "env_low_order_ratio"
+  ],
+  "descriptor_dimensions": 16,
+  "validation": {
+    "finite_features": true,
+    "unique_window_keys": true,
+    "all_selected_files_covered": true,
+    "target_labels_unknown": true,
+    "max_weighted_mean_error": 3.489272363107635e-16,
+    "max_weighted_second_moment_error": 4.440892098500626e-16,
+    "fit_files": 70,
+    "train_only_fit": true
+  },
+  "parameters": {
+    "seed": 42,
+    "envelope_fs_hz": 2000,
+    "bands_hz": [
+      [
+        500,
+        1500
+      ],
+      [
+        1500,
+        3000
+      ],
+      [
+        3000,
+        5000
+      ]
+    ],
+    "revolutions": [
+      10,
+      20
+    ],
+    "baseline_seconds": 1.0,
+    "fir_half_seconds": 0.01,
+    "kaiser_beta": 8.6,
+    "reflect_seconds": 0.1,
+    "edge_guard_seconds": 0.05,
+    "order_min": 0.2,
+    "order_max": 20.0,
+    "order_step": 0.1,
+    "peak_search_min": 1.0,
+    "peak_search_max": 10.0,
+    "low_order_cutoff": 2.0,
+    "correlation_limit": 0.9,
+    "max_features": 8,
+    "bootstrap_repeats": 100,
+    "stability_threshold": 0.6,
+    "numeric_epsilon": 1e-12,
+    "rpm_relative_changes": [
+      -0.1,
+      -0.05,
+      0.0,
+      0.05,
+      0.1
+    ],
+    "edge_guard_checks_seconds": [
+      0.025,
+      0.05,
+      0.075
+    ],
+    "gain_checks": [
+      0.5,
+      1.0,
+      2.0
+    ]
+  }
+}
