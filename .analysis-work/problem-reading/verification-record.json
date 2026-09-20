@@ -1,0 +1,59 @@
+{
+  "scope": "赛题理解、数据盘点、逐问需求和问题重述；用户明确暂不建模",
+  "sources": {
+    "problem_pdf_pages": 9,
+    "mat_files_read": 177,
+    "source_files": 161,
+    "target_files": 16
+  },
+  "loaded_entries": [
+    "math-modeling-skill/SKILL.md",
+    "math-modeling-skill/references/roles/建模手/SKILL.md",
+    "math-modeling-skill/tools/pdf/SKILL.md",
+    "skills/nature-writing/SKILL.md",
+    "skills/nature-polishing/SKILL.md",
+    "skills/humanizer-zh-academic/SKILL.md",
+    "skills/stss/SKILL.md"
+  ],
+  "verification": {
+    "pdftotext_exit_code": 0,
+    "pdftoppm_exit_code": 0,
+    "inspect_data_exit_code": 0,
+    "author_check_exit_code": 0,
+    "git_diff_check_exit_code": 0,
+    "manual_checks": [
+      "全文9页含图表阅读",
+      "题面要求与可选要求区分",
+      "各问输入输出和递进关系",
+      "重述未加入模型假设或预测结果",
+      "177个输入文件及PDF哈希未变"
+    ]
+  },
+  "scope_adjustment": {
+    "authority": "用户明确先不要急着建模",
+    "not_applicable": [
+      "模型选择",
+      "算法设计",
+      "理论文献调研",
+      "编程求解",
+      "诊断结果",
+      "P1/P2/W1/W2门禁"
+    ],
+    "M1": "限读题产物的保真、覆盖与数据一致性核验"
+  },
+  "pending": null,
+  "independent_M1": {
+    "status": "PASS",
+    "scope": "读题分析适用子集",
+    "reviewer": "/root/m1_problem_review",
+    "findings": {
+      "P0": 0,
+      "P1": 0,
+      "P2": 0
+    },
+    "evidence": "独立阅读原题9页并以SciPy读取177个MAT文件，哈希、字段、数量、长度核查一致，命令退出码0"
+  },
+  "git_commit": "9a29a2b7b0a1029f3f43285d53521489ced2dd96",
+  "git_commit_exit_code": 0,
+  "postcommit": "Committed blob bytes match both reviewed files; pre-existing modified files preserved."
+}

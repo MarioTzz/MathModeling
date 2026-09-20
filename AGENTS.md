@@ -5,7 +5,7 @@
 ## 1. 工作目录与事实来源
 
 - `PROJECT_ROOT` 为本文件所在目录；数学建模的 `SKILL_ROOT` 为 `math-modeling-skill/`，使用根目录版本，不另用其 `dsh-plugin/` 内的重复副本。
-- 题目原文、原始数据和实际运行记录构成研究事实依据；`题目分析报告.md` 记录当前建模方案，`术语表格.md` 是项目术语与符号台账。发现冲突时回到原始证据核对，并同步修订受影响产物。
+- 题目原文、原始数据和实际运行记录构成研究事实依据。发现冲突时回到原始证据核对，并同步修订受影响产物。
 - 接手任务时先核实当前阶段。区分“拟采用的方法”“已运行的实验”和“已有证据支持的结论”，不能把方案描述改写为实验结果。
 - 输入附件、`数据集/` 和第三方技能原件保持只读；研究产物写入项目目录，临时依赖与检查记录放入 `.analysis-work/`。技能升级作为独立维护任务处理。
 
@@ -15,12 +15,12 @@
 
 | 技能 | 本地入口 | 职责 |
 |---|---|---|
-| `math-modeling` | `math-modeling-skill/SKILL.md` | 阶段调度、模型与代码、证据核验、论文交付及质量门禁 |
-| `nature-writing` | `skills/nature-writing/SKILL.md` | 章节任务、论证结构、证据安排和段落组织 |
-| `nature-polishing` | `skills/nature-polishing/SKILL.md` | 学术表达、段落衔接、信息密度和结论强度 |
-| `humanizer-zh-academic` | `skills/humanizer-zh-academic/SKILL.md` | 中文模板句、机械衔接和空泛高频措辞的清理 |
-| `stss` | `skills/stss/SKILL.md` | 研究贡献、方案与结论中的防御性、自我辩解和重复保留语审查 |
-| `nature-shared` | `skills/nature-shared/SKILL.md` | 两个 Nature 技能的共享依赖，按引用加载，不单独发起流程 |
+| `math-modeling` | [`math-modeling-skill/SKILL.md`](math-modeling-skill/SKILL.md) | 阶段调度、模型与代码、证据核验、论文交付及质量门禁 |
+| `nature-writing` | [`skills/nature-writing/SKILL.md`](skills/nature-writing/SKILL.md) | 章节任务、论证结构、证据安排和段落组织 |
+| `nature-polishing` | [`skills/nature-polishing/SKILL.md`](skills/nature-polishing/SKILL.md) | 学术表达、段落衔接、信息密度和结论强度 |
+| `humanizer-zh-academic` | [`skills/humanizer-zh-academic/SKILL.md`](skills/humanizer-zh-academic/SKILL.md) | 中文模板句、机械衔接和空泛高频措辞的清理 |
+| `stss` | [`skills/stss/SKILL.md`](skills/stss/SKILL.md) | 研究贡献、方案与结论中的防御性、自我辩解和重复保留语审查 |
+| `nature-shared` | [`skills/nature-shared/SKILL.md`](skills/nature-shared/SKILL.md) | 两个 Nature 技能的共享依赖，按引用加载，不单独发起流程 |
 
 任务涉及本项目论文、报告或其他研究文字的起草、改写、润色和结构调整时，四个写作技能共同参与；参与深度与修改范围匹配。局部修改可由 `nature-writing` 仅检查段落职责，由 `stss` 仅检查相关表达，无问题时保留原文，不要求四轮全文重写。纯数据查看、代码、环境配置或 Git 操作不触发论文写作流程。
 
@@ -50,7 +50,7 @@
 ## 5. 术语与原文审阅
 
 - 首次使用专业缩写时给出全称；同一概念使用同一名称、符号和单位，保持正文、图题、表格与公式一致，勿用近义词替换来制造语言变化。
-- 本项目重点区分正常状态与故障类别 `N/OR/IR/B`、目标域文件编号与类别编码、基座 BA 通道与平衡准确率，以及自旋 BSF 与题面滚动体故障频率；具体定义遵循 `术语表格.md`。
+- 本项目重点区分正常状态与故障类别 `N/OR/IR/B`、目标域文件编号与类别编码、基座 BA 通道与平衡准确率，以及自旋 BSF 与题面滚动体故障频率；具体定义以题目原文和数据字段为准。
 - 截图中“主线交互”等驾驶场景词语属于其他课题，不移植到轴承诊断。沿用其原则：根据实际语境写明故障部位、工况、观测通道、源域/目标域及预测对象。
 - 文章截图仅用于定位问题。涉及文章修改、术语解释或结构判断时，回到对应原始 Word 文件，结合完整章节、前后段落、表格、公式、图注及批注审阅。原稿为 Markdown 或 LaTeX 时审阅对应源文件及关联材料；原稿缺失时请求提供，并将可给出的意见限定为截图可见范围。
 
@@ -60,4 +60,4 @@
 - DOCX 转换、结构检查和渲染遵循本地建模技能的脚本与门禁；LaTeX、PDF、表格和论文检索按数学建模入口加载对应工具。工具缺失时明确说明已完成部分和未验证部分。
 - 只改当前请求涉及的内容，保留无关修改。Git 提交、推送、全局安装或额外插件安装以用户本次明确授权为准；下载技能不自动授权其仓库中的 hooks、后台服务或外部数据上传。
 
-来源版本、许可证和项目级发现入口见 `skills/README.md`。
+来源版本、许可证和项目级发现入口见 [`skills/README.md`](skills/README.md)。
