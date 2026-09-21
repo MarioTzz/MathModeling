@@ -1,0 +1,26 @@
+{
+  "seed": 42,
+  "features": [
+    "crest_factor",
+    "kurtosis_pearson",
+    "skewness",
+    "env_entropy",
+    "env_centroid_order",
+    "env_spread_order",
+    "env_peak_order",
+    "env_harmonic_ratio",
+    "env_low_order_ratio"
+  ],
+  "blocks": {
+    "impulse_shape": ["crest_factor", "kurtosis_pearson", "skewness"],
+    "envelope_order": [
+      "env_entropy", "env_centroid_order", "env_spread_order",
+      "env_peak_order", "env_harmonic_ratio", "env_low_order_ratio"
+    ]
+  },
+  "alpha_candidates": [0.0, 0.25, 0.5, 1.0],
+  "n_estimators": 500,
+  "min_samples_leaf": 1,
+  "max_features": "sqrt",
+  "target_rpm_sensitivity": [540, 600, 660]
+}

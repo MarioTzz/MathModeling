@@ -1,0 +1,5 @@
+﻿block,stage,mean_distance_l2,cov_distance_frobenius,source_files,target_files
+impulse_shape,before,0.739663018987132,3.8779917166635,93,16
+impulse_shape,after,0.369831509493566,2.58502196032537,93,16
+envelope_order,before,2.69292438586112,1.93818457899333,93,16
+envelope_order,after,1.34646219293056,1.26643919920921,93,16

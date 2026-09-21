@@ -1,0 +1,376 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-09-21T08:51:09.187575+00:00",
+  "random_seed": 42,
+  "input_files": [
+    {
+      "path": "/Users/mariozz/MathModeling/模型适配数据集/q1/files.csv",
+      "sha256": "26b6653758c43f665fa51b9973b12bda6ec0223883dd78d2107055867f6ca778",
+      "bytes": 75808,
+      "relative_path": "模型适配数据集/q1/files.csv"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/模型适配数据集/q1/window_features_all.csv",
+      "sha256": "217dae53a37f835f4f4685c27d8ad1735fe40548ff1612b6f540ca496d10fa4b",
+      "bytes": 289346,
+      "relative_path": "模型适配数据集/q1/window_features_all.csv"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/results/q1/summary.json",
+      "sha256": "baa2477124694200ed8b224777830baa2a00175adb08abfa7700e7b617b3ab0d",
+      "bytes": 1734,
+      "relative_path": "results/q1/summary.json"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/configs/q3.json",
+      "sha256": "8a5d3aa18d5cfec51a12d1143eea637d08680ccc3b52aed16844a7c619a5bb2f",
+      "bytes": 656,
+      "relative_path": "configs/q3.json"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/问题三_求解.py",
+      "sha256": "cfac6cc49c3ea9f125e6c7e32446c3372d51e91e3f0aaeb6bd3d4c766a9dd3f7",
+      "bytes": 13113,
+      "relative_path": "问题三_求解.py"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/utils/q3_transfer.py",
+      "sha256": "bc0ef2f6faa1624f56248907952dcb5c1bddca268289dedcfb2b5777d93bcb4b",
+      "bytes": 9946,
+      "relative_path": "utils/q3_transfer.py"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/utils/q3_outputs.py",
+      "sha256": "81ed4d9440d17063f8f676cad70395163859d29b0391c971379b5966ab11deb4",
+      "bytes": 7731,
+      "relative_path": "utils/q3_outputs.py"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/utils/q3_plots.py",
+      "sha256": "5475889221a4763a7688d0ba9b64f09b4718940cea788d3d08a779cae46e32c5",
+      "bytes": 12574,
+      "relative_path": "utils/q3_plots.py"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/utils/q3_manifest.py",
+      "sha256": "686cbe97f7b1d6fea5f597897ed7522b6aabbb798b8f1e58406daeefb3ee7491",
+      "bytes": 3660,
+      "relative_path": "utils/q3_manifest.py"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/utils/q1_model.py",
+      "sha256": "22c190f6f962ac248f3104a6e1d7bafba402d8c38b2099b72a9af802345758ea",
+      "bytes": 23796,
+      "relative_path": "utils/q1_model.py"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/utils/q2_optimized.py",
+      "sha256": "fd3d3a589744514f7fad87fdae2e8c3537da5b9d84789749a3921892d38c5d49",
+      "bytes": 20431,
+      "relative_path": "utils/q2_optimized.py"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/utils/q2_model.py",
+      "sha256": "c58dc998f1ea7908d01eac6216a21635e28d95f065e9e8c424a3cf9a3c490992",
+      "bytes": 16789,
+      "relative_path": "utils/q2_model.py"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/utils/figure_export.py",
+      "sha256": "40ce3bcd31dfc4b33e38a1cb180c75dc730ee6fa046f04934c79f285c6f890c1",
+      "bytes": 6450,
+      "relative_path": "utils/figure_export.py"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/utils/plot_style.py",
+      "sha256": "f3de0a0c858d6018310d7e461574697a4cec7b28e5e20b8ccdaa7749772147e2",
+      "bytes": 17160,
+      "relative_path": "utils/plot_style.py"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/utils/visual_qa.py",
+      "sha256": "67675709e523c76e2748d50749de7bc6332f07df865379b26d024321fb40120f",
+      "bytes": 12677,
+      "relative_path": "utils/visual_qa.py"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/math-modeling-skill/references/roles/编程手/scripts/repro_manifest.py",
+      "sha256": "db9bf7b357fafe49b1595492ceb3fd7401a2150d551725347aa1e9efc684a09a",
+      "bytes": 4332,
+      "relative_path": "math-modeling-skill/references/roles/编程手/scripts/repro_manifest.py"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/math-modeling-skill/tools/figure/scripts/style_constants.py",
+      "sha256": "d574969063fc1fb0fbd2449c4a77201ae8e46bb837cf4db8467c36bb0073dc8b",
+      "bytes": 7098,
+      "relative_path": "math-modeling-skill/tools/figure/scripts/style_constants.py"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/math-modeling-skill/VERSION",
+      "sha256": "64d23f858ef51b0f996e4966d4e27c0371b437e2d2787890b1f7ad22d4ec5663",
+      "bytes": 6,
+      "relative_path": "math-modeling-skill/VERSION"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/数据集/目标域数据集/A.mat",
+      "sha256": "251d3f048e790743582df809e8867ffbda974f349d525518859aa423d4e5b9c7",
+      "bytes": 1986647,
+      "relative_path": "数据集/目标域数据集/A.mat"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/数据集/目标域数据集/B.mat",
+      "sha256": "69e71fdcfe1caf92544119abc49658116652c8514391ad87ece73661175feeae",
+      "bytes": 1964901,
+      "relative_path": "数据集/目标域数据集/B.mat"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/数据集/目标域数据集/C.mat",
+      "sha256": "d5ba849034781a8303988f248eeb31a2350ee79527968f1e790b64ba578a4be2",
+      "bytes": 1979343,
+      "relative_path": "数据集/目标域数据集/C.mat"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/数据集/目标域数据集/D.mat",
+      "sha256": "ffff08bf2edea2cf634c2fb74768e82820c96affcb249a43f454791eb0ae4b0e",
+      "bytes": 1983658,
+      "relative_path": "数据集/目标域数据集/D.mat"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/数据集/目标域数据集/E.mat",
+      "sha256": "a1468758f708883c272d960d222cbbcd1b9d68661046b1d86617dfd48c7dab80",
+      "bytes": 1986866,
+      "relative_path": "数据集/目标域数据集/E.mat"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/数据集/目标域数据集/F.mat",
+      "sha256": "d4ba5aa430c3deeacd9e5a93e1519ce679bd20e6a68c4b00dc078030f45f9781",
+      "bytes": 1987545,
+      "relative_path": "数据集/目标域数据集/F.mat"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/数据集/目标域数据集/G.mat",
+      "sha256": "61f65d34e0dd2f4fa516391da9d92c112d778bad57939c4365ffaf222489410a",
+      "bytes": 1969571,
+      "relative_path": "数据集/目标域数据集/G.mat"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/数据集/目标域数据集/H.mat",
+      "sha256": "4301b020b89e8043ccf04959c2809f76e3e2af9cafbbe3924cbd1036739034ab",
+      "bytes": 1981656,
+      "relative_path": "数据集/目标域数据集/H.mat"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/数据集/目标域数据集/I.mat",
+      "sha256": "2b97fdc001d5200cc6e44c4c42f7fa4b92e9045af3a45c22dadff46682d733f4",
+      "bytes": 1974750,
+      "relative_path": "数据集/目标域数据集/I.mat"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/数据集/目标域数据集/J.mat",
+      "sha256": "69b10ba9c1ab652ee1e3e8fc26434da1357ea905cafa7db293b9d78a452d7d10",
+      "bytes": 1979113,
+      "relative_path": "数据集/目标域数据集/J.mat"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/数据集/目标域数据集/K.mat",
+      "sha256": "f28bd402b69d8ec1c992f6b471a209e62139e030fd590711c95825dc9560f4cd",
+      "bytes": 1982103,
+      "relative_path": "数据集/目标域数据集/K.mat"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/数据集/目标域数据集/L.mat",
+      "sha256": "bb12706f5568c88e68fa7a727e5f67f82ae95f5d4a8f6077d66e5de97ff9bbd3",
+      "bytes": 1976640,
+      "relative_path": "数据集/目标域数据集/L.mat"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/数据集/目标域数据集/M.mat",
+      "sha256": "83d907b2efed100fee7b082a7fbe5231dc83abd97d17c7fc87eeff1d2c445afe",
+      "bytes": 1982059,
+      "relative_path": "数据集/目标域数据集/M.mat"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/数据集/目标域数据集/N.mat",
+      "sha256": "9ab3d34709c3d8ebfa479ac416775c4ee01526dcd47fe72e5e8ee4640d420315",
+      "bytes": 1985909,
+      "relative_path": "数据集/目标域数据集/N.mat"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/数据集/目标域数据集/O.mat",
+      "sha256": "526d97cd7207745a6a682f45a1b306caaef4d73452bf8a2366b07cc55925dec4",
+      "bytes": 1965439,
+      "relative_path": "数据集/目标域数据集/O.mat"
+    },
+    {
+      "path": "/Users/mariozz/MathModeling/数据集/目标域数据集/P.mat",
+      "sha256": "502fbc50cc42294e66d51b6eb8b6d5645c1cc65d4e0140362b792e0b2037c4b0",
+      "bytes": 1983641,
+      "relative_path": "数据集/目标域数据集/P.mat"
+    }
+  ],
+  "runtime": {
+    "name": "python",
+    "version": "3.12.14",
+    "platform": "macOS-15.7.9-arm64-arm-64bit",
+    "dependencies": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.8.0",
+      "matplotlib": "3.10.9"
+    }
+  },
+  "key_parameters": {
+    "alpha_candidates": [
+      0.0,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "alpha_selected": 0.5,
+    "n_estimators": 500,
+    "target_rpm_sensitivity": [
+      540,
+      600,
+      660
+    ]
+  },
+  "reproduce_command": "LOKY_MAX_CPU_COUNT=8 PYTHONDONTWRITEBYTECODE=1 MPLCONFIGDIR=.analysis-work/matplotlib XDG_CACHE_HOME=.analysis-work/font-cache PYTHONPATH=.analysis-work/q2-deps:.analysis-work/q1-deps:.analysis-work/python-deps:. /Users/mariozz/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 问题三_求解.py --overwrite",
+  "deterministic_output_files": [
+    {
+      "relative_path": "proxy_metrics.csv",
+      "sha256": "ffbf9f616749473fe24703504c7594c34097601c28b7e9ee210141536f2119a9",
+      "bytes": 652
+    },
+    {
+      "relative_path": "file_medians_nine_features.csv",
+      "sha256": "52474b29a4d0495c70e8a96007d537d60792d9672d9924a07b94c7a45f8b9431",
+      "bytes": 31274
+    },
+    {
+      "relative_path": "source_test_predictions.csv",
+      "sha256": "d265cc8e7e8e5b6413ddb5fa9f298fced1695a089e2543dafc676f5d26871142",
+      "bytes": 5026
+    },
+    {
+      "relative_path": "target_file_labels.csv",
+      "sha256": "05326bc8e091ab6d43a0b7abf4eae20c1a5cf22b74921e0c8107ae1ca42c0d45",
+      "bytes": 1372
+    },
+    {
+      "relative_path": "rpm_sensitivity_predictions.csv",
+      "sha256": "0d86d9db28872ec45b81c9984501acb1ae27010dd4df819f01d116a5432ecb7c",
+      "bytes": 857
+    },
+    {
+      "relative_path": "target_leave_one_out.csv",
+      "sha256": "cb8d915ddd801e265b87391d0c2b62c28b83cf32a4a8aedcb1613fd1994b0d4b",
+      "bytes": 275
+    },
+    {
+      "relative_path": "alignment_diagnostics.csv",
+      "sha256": "4ae2ec28d30267839e3d2b3aa5c5852e329b01a86f0f7ef1ada3ee16927b4dc0",
+      "bytes": 326
+    },
+    {
+      "relative_path": "model/trees.json",
+      "sha256": "4bd4da277a372a0937d6b3d29a11e6f5d93cb2779a3c4bfead456226a49cd0c3",
+      "bytes": 663
+    },
+    {
+      "relative_path": "model/trees.npz",
+      "sha256": "153fdf17db4952dfbe6775c25b0edea32e3ea9840dd1845c7b24c77bad6ee53f",
+      "bytes": 1218320
+    },
+    {
+      "relative_path": "model/model_interface.json",
+      "sha256": "55f0eff74d567281d5eb511131a6d75ff5e97d90fc6af825628d1af317a75073",
+      "bytes": 3722
+    },
+    {
+      "relative_path": "model/export_validation.json",
+      "sha256": "ef6d64d14d6812b8332578f037c5a372d66c00366c9cac024ca9c5dd334f4f27",
+      "bytes": 85
+    },
+    {
+      "relative_path": "问题三_结果报告.md",
+      "sha256": "a35eb2db4b50d4128d2582d127f51d6447eaf3c906a4e59c5bacc6b5c1c3fd94",
+      "bytes": 2792
+    },
+    {
+      "relative_path": "figure_contracts.json",
+      "sha256": "d3fd22045bbebca55aef153767a7fb0b7245f179cf31706b4102f35a26679fdc",
+      "bytes": 3143
+    },
+    {
+      "relative_path": "图表清单.md",
+      "sha256": "83aada1be30cd0d610e12612efd6f8cc2ac110dbf14bf6be433fe3263cd7e990",
+      "bytes": 847
+    },
+    {
+      "relative_path": "图表面板.html",
+      "sha256": "d0650aae3444632a38b926659ab800487327c5460acde83a2ec0b0209443fccf",
+      "bytes": 2078
+    }
+  ],
+  "summary_semantic_values": {
+    "mode": "full",
+    "source_files": 116,
+    "source_development": 93,
+    "source_test": 23,
+    "target_files": 16,
+    "target_truth_available": false,
+    "target_accuracy": null,
+    "n_features": 9,
+    "target_window_count": 48,
+    "alpha_selected": 0.5,
+    "proxy_selection": "lexicographic_min_mean_negative_alpha",
+    "source_baseline_metrics": {
+      "files": 23,
+      "correct": 20,
+      "accuracy": 0.8695652173913043,
+      "balanced_accuracy": 0.7045454545454546,
+      "macro_f1": 0.6673076923076923
+    },
+    "source_aligned_metrics": {
+      "files": 23,
+      "correct": 20,
+      "accuracy": 0.8695652173913043,
+      "balanced_accuracy": 0.7045454545454546,
+      "macro_f1": 0.6673076923076923
+    },
+    "target_predicted_counts": {
+      "IR": 7,
+      "B": 5,
+      "OR": 4
+    },
+    "target_branch_agreement": 0.5625,
+    "target_loo_agreement": 0.875,
+    "target_rpm_full_agreement": 0.75,
+    "target_review_files": 8,
+    "scale_zero_iqr": [],
+    "block_shrinkage": {
+      "impulse_shape": {
+        "source": 0.15878816470371993,
+        "target": 0.29339315292283513
+      },
+      "envelope_order": {
+        "source": 0.05527658417703148,
+        "target": 0.18847681618842382
+      }
+    }
+  },
+  "figure_stems": [
+    "flow_overall_model",
+    "flow_q3_model",
+    "process_q3_covariance",
+    "process_q3_mean",
+    "process_q3_proxy",
+    "raw_q3_files",
+    "raw_q3_shared_features",
+    "raw_q3_windows",
+    "result_q3_margins",
+    "result_q3_scores",
+    "result_q3_stability"
+  ]
+}

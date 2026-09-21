@@ -1,0 +1,35 @@
+{
+  "model_type": "ExtraTreesClassifier_file_median",
+  "labels": [
+    "N",
+    "OR",
+    "IR",
+    "B"
+  ],
+  "features": [
+    "crest_factor",
+    "kurtosis_pearson",
+    "skewness",
+    "env_entropy",
+    "env_centroid_order",
+    "env_spread_order",
+    "env_peak_order",
+    "env_harmonic_ratio",
+    "env_low_order_ratio"
+  ],
+  "parameters": {
+    "min_samples_leaf": 1,
+    "max_features": "sqrt",
+    "alignment_alpha": 0.5,
+    "n_estimators": 500,
+    "class_weight": "balanced",
+    "random_state": 42
+  },
+  "estimator_classes": [
+    "B",
+    "IR",
+    "N",
+    "OR"
+  ],
+  "score_semantics": "mean_leaf_class_fraction_not_calibrated_probability"
+}

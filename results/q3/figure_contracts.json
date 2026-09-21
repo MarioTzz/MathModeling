@@ -1,0 +1,101 @@
+[
+  {
+    "figure": "raw_q3_files",
+    "question": "q3",
+    "goal": "源域划分与目标域规模",
+    "unit_of_analysis": "MAT 文件",
+    "evidence": "Q1 files.csv",
+    "caption": "源域 70/23/23；目标域 16 文件无真值。",
+    "dpi": 300
+  },
+  {
+    "figure": "raw_q3_windows",
+    "question": "q3",
+    "goal": "窗口覆盖与文件聚合依据",
+    "unit_of_analysis": "MAT 文件",
+    "evidence": "Q1 window_features_all.csv",
+    "caption": "目标域每文件 3 个完整窗口。",
+    "dpi": 300
+  },
+  {
+    "figure": "raw_q3_shared_features",
+    "question": "q3",
+    "goal": "源目标共享特征的原始位置",
+    "unit_of_analysis": "MAT 文件",
+    "evidence": "Q1 file median features",
+    "caption": "二维散点用于显示分布位置，不代表类别可分性。",
+    "dpi": 300
+  },
+  {
+    "figure": "process_q3_proxy",
+    "question": "q3",
+    "goal": "双向代理任务选 α",
+    "unit_of_analysis": "保留源域文件",
+    "evidence": "proxy_metrics.csv",
+    "caption": "仅覆盖 OR、IR、B 三类故障。",
+    "dpi": 300
+  },
+  {
+    "figure": "process_q3_covariance",
+    "question": "q3",
+    "goal": "协方差对齐前后距离",
+    "unit_of_analysis": "特征块",
+    "evidence": "alignment_diagnostics.csv",
+    "caption": "距离变化只是迁移过程诊断，并非目标分类准确率。",
+    "dpi": 300
+  },
+  {
+    "figure": "process_q3_mean",
+    "question": "q3",
+    "goal": "均值对齐前后距离",
+    "unit_of_analysis": "特征块",
+    "evidence": "alignment_diagnostics.csv",
+    "caption": "仅依据 93 个开发源文件和 16 个无标签目标文件计算。",
+    "dpi": 300
+  },
+  {
+    "figure": "result_q3_scores",
+    "question": "q3",
+    "goal": "16文件四类模型分数",
+    "unit_of_analysis": "目标 MAT 文件",
+    "evidence": "target_file_labels.csv",
+    "caption": "分数未经概率校准，颜色不能当成真实类别概率。",
+    "dpi": 300
+  },
+  {
+    "figure": "result_q3_margins",
+    "question": "q3",
+    "goal": "逐文件前两类票差",
+    "unit_of_analysis": "目标 MAT 文件",
+    "evidence": "target_file_labels.csv",
+    "caption": "票差越小，两个最高分数越接近；不是误差概率。",
+    "dpi": 300
+  },
+  {
+    "figure": "result_q3_stability",
+    "question": "q3",
+    "goal": "分支与转速扰动稳定性",
+    "unit_of_analysis": "目标 MAT 文件",
+    "evidence": "target_file_labels.csv",
+    "caption": "橙色表示与基准预测不一致；8 文件需人工复核。",
+    "dpi": 300
+  },
+  {
+    "figure": "flow_overall_model",
+    "question": "q3",
+    "goal": "四问递进关系",
+    "unit_of_analysis": "建模阶段",
+    "evidence": "题目要求与现有模型",
+    "caption": "第三问使用共享无量纲表征，第四问尚未执行。",
+    "dpi": 300
+  },
+  {
+    "figure": "flow_q3_model",
+    "question": "q3",
+    "goal": "问题三可执行求解流程",
+    "unit_of_analysis": "MAT 文件",
+    "evidence": "问题三_求解.py",
+    "caption": "缩放仅由源域开发集拟合，目标域不提供监督标签。",
+    "dpi": 300
+  }
+]

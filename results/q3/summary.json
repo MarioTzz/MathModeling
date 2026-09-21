@@ -1,0 +1,48 @@
+{
+  "mode": "full",
+  "source_files": 116,
+  "source_development": 93,
+  "source_test": 23,
+  "target_files": 16,
+  "target_truth_available": false,
+  "target_accuracy": null,
+  "n_features": 9,
+  "target_window_count": 48,
+  "alpha_selected": 0.5,
+  "proxy_selection": "lexicographic_min_mean_negative_alpha",
+  "source_baseline_metrics": {
+    "files": 23,
+    "correct": 20,
+    "accuracy": 0.8695652173913043,
+    "balanced_accuracy": 0.7045454545454546,
+    "macro_f1": 0.6673076923076923
+  },
+  "source_aligned_metrics": {
+    "files": 23,
+    "correct": 20,
+    "accuracy": 0.8695652173913043,
+    "balanced_accuracy": 0.7045454545454546,
+    "macro_f1": 0.6673076923076923
+  },
+  "target_predicted_counts": {
+    "IR": 7,
+    "B": 5,
+    "OR": 4
+  },
+  "target_branch_agreement": 0.5625,
+  "target_loo_agreement": 0.875,
+  "target_rpm_full_agreement": 0.75,
+  "target_review_files": 8,
+  "scale_zero_iqr": [],
+  "block_shrinkage": {
+    "impulse_shape": {
+      "source": 0.15878816470371993,
+      "target": 0.29339315292283513
+    },
+    "envelope_order": {
+      "source": 0.05527658417703148,
+      "target": 0.18847681618842382
+    }
+  },
+  "elapsed_seconds": 4.6967606249963865
+}
