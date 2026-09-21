@@ -1,0 +1,13 @@
+﻿feature,block,selection_frequency,fisher_score,selected
+env_spread_order,envelope,1,2.10756654595233,True
+env_entropy,envelope,1,1.87284688475189,True
+env_centroid_order,envelope,1,1.56935612418247,True
+skewness,impulse_shape,1,0.75647635070487,True
+peak_to_peak,amplitude,0.97,0.379679430585968,True
+env_low_order_ratio,envelope,0.87,0.369156997932615,True
+env_harmonic_ratio,envelope,0.58,0.605303880025482,False
+crest_factor,impulse_shape,0.58,0.262839662605676,False
+env_peak_order,envelope,0.57,0.270765293052494,False
+ac_rms,amplitude,0.21,0.206413497452339,False
+kurtosis_pearson,impulse_shape,0.16,0.224622155341163,False
+mean_abs,amplitude,0.06,0.173594841715489,False

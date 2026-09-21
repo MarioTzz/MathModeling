@@ -1,0 +1,5 @@
+﻿model,kernel,weighting,C,gamma,selected_features,support_vectors,fit_seconds,test_inference_seconds
+rbf_unweighted,rbf,window_uniform,256,0.5,env_entropy|env_spread_order|env_centroid_order|skewness|peak_to_peak|env_harmonic_ratio|env_low_order_ratio,615,0.00346333300694823,0.0113302909303457
+rbf_class_balanced,rbf,class_balanced,1024,0.5,env_entropy|env_spread_order|env_centroid_order|skewness|peak_to_peak|env_harmonic_ratio|env_low_order_ratio,491,0.00339404097758234,0.0111755830002949
+rbf_file_class_balanced,rbf,file_class_balanced,1024,0.5,env_entropy|env_spread_order|env_centroid_order|skewness|peak_to_peak|env_harmonic_ratio|env_low_order_ratio,500,0.00358716701157391,0.0110989169916138
+linear_file_class_balanced,linear,file_class_balanced,1024,0,env_entropy|env_spread_order|env_centroid_order|skewness|peak_to_peak|env_harmonic_ratio|env_low_order_ratio,649,0.00581500004045665,0.0104006249457598

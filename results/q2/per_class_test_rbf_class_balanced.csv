@@ -1,0 +1,5 @@
+﻿label,precision,recall,f1,support,model
+N,0,0,0,1,rbf_class_balanced
+OR,0.9,0.818181818181818,0.857142857142857,11,rbf_class_balanced
+IR,1,0.833333333333333,0.909090909090909,6,rbf_class_balanced
+B,0.625,1,0.769230769230769,5,rbf_class_balanced

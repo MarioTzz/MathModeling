@@ -1,0 +1,13 @@
+﻿model,representation,split,aggregation,accuracy,macro_f1,balanced_accuracy,normal_recall,n_files
+rbf_unweighted,one_second,test,mean_score,0.826086956521739,0.633866133866134,0.662878787878788,0,23
+rbf_unweighted,one_second,test,median_score,0.826086956521739,0.633866133866134,0.662878787878788,0,23
+rbf_unweighted,one_second,test,majority_vote,0.869565217391304,0.899891774891775,0.912878787878788,1,23
+rbf_class_balanced,one_second,test,mean_score,0.826086956521739,0.633866133866134,0.662878787878788,0,23
+rbf_class_balanced,one_second,test,median_score,0.826086956521739,0.633866133866134,0.662878787878788,0,23
+rbf_class_balanced,one_second,test,majority_vote,0.869565217391304,0.899891774891775,0.912878787878788,1,23
+rbf_file_class_balanced,one_second,test,mean_score,0.826086956521739,0.633866133866134,0.662878787878788,0,23
+rbf_file_class_balanced,one_second,test,median_score,0.826086956521739,0.633866133866134,0.662878787878788,0,23
+rbf_file_class_balanced,one_second,test,majority_vote,0.869565217391304,0.899891774891775,0.912878787878788,1,23
+linear_file_class_balanced,one_second,test,mean_score,0.739130434782609,0.7946001367054,0.825757575757576,1,23
+linear_file_class_balanced,one_second,test,median_score,0.695652173913043,0.765151515151515,0.803030303030303,1,23
+linear_file_class_balanced,one_second,test,majority_vote,0.695652173913043,0.761904761904762,0.803030303030303,1,23

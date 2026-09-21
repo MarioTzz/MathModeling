@@ -1,0 +1,5 @@
+﻿label,precision,recall,f1,support,model
+N,1,1,1,1,linear_file_class_balanced
+OR,0.875,0.636363636363636,0.736842105263158,11,linear_file_class_balanced
+IR,0.8,0.666666666666667,0.727272727272727,6,linear_file_class_balanced
+B,0.555555555555556,1,0.714285714285714,5,linear_file_class_balanced

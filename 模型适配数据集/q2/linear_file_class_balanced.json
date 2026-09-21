@@ -1,0 +1,183 @@
+{
+  "labels": [
+    "N",
+    "OR",
+    "IR",
+    "B"
+  ],
+  "kernel": "linear",
+  "C": 1024.0,
+  "gamma": 0.0,
+  "weighting": "file_class_balanced",
+  "selected_features": [
+    "env_entropy",
+    "env_spread_order",
+    "env_centroid_order",
+    "skewness",
+    "peak_to_peak",
+    "env_harmonic_ratio",
+    "env_low_order_ratio"
+  ],
+  "scaler": {
+    "features": [
+      "env_entropy",
+      "env_spread_order",
+      "env_centroid_order",
+      "skewness",
+      "peak_to_peak",
+      "env_harmonic_ratio",
+      "env_low_order_ratio"
+    ],
+    "mean": [
+      0.6277405336048559,
+      3.4183823501190327,
+      4.54297234568854,
+      0.024500084005258382,
+      5.429843575152716,
+      0.32357782349335784,
+      0.32075476032163364
+    ],
+    "std": [
+      0.17784080601172678,
+      0.8694836709081672,
+      1.314757079724144,
+      0.14755681222735834,
+      4.170233959038305,
+      0.19884878678773643,
+      0.15937274757373246
+    ],
+    "fit_file_ids": [
+      "source/12kHz_DE_data/B/0007/B007_0.mat",
+      "source/12kHz_DE_data/B/0007/B007_2.mat",
+      "source/12kHz_DE_data/B/0007/B007_3.mat",
+      "source/12kHz_DE_data/B/0014/B014_0.mat",
+      "source/12kHz_DE_data/B/0014/B014_1.mat",
+      "source/12kHz_DE_data/B/0014/B014_2.mat",
+      "source/12kHz_DE_data/B/0014/B014_3.mat",
+      "source/12kHz_DE_data/B/0021/B021_0.mat",
+      "source/12kHz_DE_data/B/0021/B021_1.mat",
+      "source/12kHz_DE_data/B/0021/B021_2.mat",
+      "source/12kHz_DE_data/B/0021/B021_3.mat",
+      "source/12kHz_DE_data/B/0028/B028_0_(1797rpm).mat",
+      "source/12kHz_DE_data/B/0028/B028_2_(1750rpm).mat",
+      "source/12kHz_DE_data/B/0028/B028_3_(1730rpm).mat",
+      "source/12kHz_DE_data/IR/0007/IR007_0.mat",
+      "source/12kHz_DE_data/IR/0007/IR007_2.mat",
+      "source/12kHz_DE_data/IR/0007/IR007_3.mat",
+      "source/12kHz_DE_data/IR/0014/IR014_0.mat",
+      "source/12kHz_DE_data/IR/0014/IR014_1.mat",
+      "source/12kHz_DE_data/IR/0014/IR014_2.mat",
+      "source/12kHz_DE_data/IR/0021/IR021_0.mat",
+      "source/12kHz_DE_data/IR/0021/IR021_1.mat",
+      "source/12kHz_DE_data/IR/0021/IR021_2.mat",
+      "source/12kHz_DE_data/IR/0021/IR021_3.mat",
+      "source/12kHz_DE_data/IR/0028/IR028_0_(1797rpm).mat",
+      "source/12kHz_DE_data/IR/0028/IR028_1_(1772rpm).mat",
+      "source/12kHz_DE_data/IR/0028/IR028_2_(1750rpm).mat",
+      "source/12kHz_DE_data/IR/0028/IR028_3_(1730rpm).mat",
+      "source/12kHz_DE_data/OR/Centered/0007/OR007@6_0.mat",
+      "source/12kHz_DE_data/OR/Centered/0007/OR007@6_1.mat",
+      "source/12kHz_DE_data/OR/Centered/0007/OR007@6_2.mat",
+      "source/12kHz_DE_data/OR/Centered/0007/OR007@6_3.mat",
+      "source/12kHz_DE_data/OR/Centered/0014/OR014@6_0.mat",
+      "source/12kHz_DE_data/OR/Centered/0014/OR014@6_1.mat",
+      "source/12kHz_DE_data/OR/Centered/0014/OR014@6_2.mat",
+      "source/12kHz_DE_data/OR/Centered/0014/OR014@6_3.mat",
+      "source/12kHz_DE_data/OR/Centered/0021/OR021@6_0.mat",
+      "source/12kHz_DE_data/OR/Centered/0021/OR021@6_1.mat",
+      "source/12kHz_DE_data/OR/Centered/0021/OR021@6_2.mat",
+      "source/12kHz_DE_data/OR/Opposite/0007/OR007@12_3.mat",
+      "source/12kHz_DE_data/OR/Opposite/0021/OR021@12_0.mat",
+      "source/12kHz_DE_data/OR/Opposite/0021/OR021@12_1.mat",
+      "source/12kHz_DE_data/OR/Opposite/0021/OR021@12_2.mat",
+      "source/12kHz_DE_data/OR/Orthogonal/0007/OR007@3_0.mat",
+      "source/12kHz_DE_data/OR/Orthogonal/0007/OR007@3_1.mat",
+      "source/12kHz_DE_data/OR/Orthogonal/0007/OR007@3_3.mat",
+      "source/12kHz_DE_data/OR/Orthogonal/0021/OR021@3_0.mat",
+      "source/12kHz_DE_data/OR/Orthogonal/0021/OR021@3_1.mat",
+      "source/12kHz_DE_data/OR/Orthogonal/0021/OR021@3_2.mat",
+      "source/12kHz_DE_data/OR/Orthogonal/0021/OR021@3_3.mat",
+      "source/48kHz_DE_data/B/0007/B007_1.mat",
+      "source/48kHz_DE_data/B/0007/B007_2.mat",
+      "source/48kHz_DE_data/B/0007/B007_3.mat",
+      "source/48kHz_DE_data/B/0014/B014_0.mat",
+      "source/48kHz_DE_data/B/0014/B014_1.mat",
+      "source/48kHz_DE_data/B/0014/B014_2.mat",
+      "source/48kHz_DE_data/B/0021/B021_0.mat",
+      "source/48kHz_DE_data/B/0021/B021_1.mat",
+      "source/48kHz_DE_data/B/0021/B021_2.mat",
+      "source/48kHz_DE_data/IR/0007/IR007_0.mat",
+      "source/48kHz_DE_data/IR/0007/IR007_2.mat",
+      "source/48kHz_DE_data/IR/0014/IR014_0.mat",
+      "source/48kHz_DE_data/IR/0014/IR014_1.mat",
+      "source/48kHz_DE_data/IR/0014/IR014_2.mat",
+      "source/48kHz_DE_data/IR/0021/IR021_1.mat",
+      "source/48kHz_DE_data/IR/0021/IR021_2.mat",
+      "source/48kHz_DE_data/IR/0021/IR021_3.mat",
+      "source/48kHz_DE_data/OR/Centered/0007/OR007@6_0.mat",
+      "source/48kHz_DE_data/OR/Centered/0007/OR007@6_1.mat",
+      "source/48kHz_DE_data/OR/Centered/0007/OR007@6_2.mat",
+      "source/48kHz_DE_data/OR/Centered/0007/OR007@6_3.mat",
+      "source/48kHz_DE_data/OR/Centered/0014/OR014@6_1.mat",
+      "source/48kHz_DE_data/OR/Centered/0014/OR014@6_2.mat",
+      "source/48kHz_DE_data/OR/Centered/0014/OR014@6_3.mat",
+      "source/48kHz_DE_data/OR/Centered/0021/OR021@6_0.mat",
+      "source/48kHz_DE_data/OR/Centered/0021/OR021@6_1.mat",
+      "source/48kHz_DE_data/OR/Centered/0021/OR021@6_2.mat",
+      "source/48kHz_DE_data/OR/Centered/0021/OR021@6_3.mat",
+      "source/48kHz_DE_data/OR/Opposite/0007/OR007@12_0.mat",
+      "source/48kHz_DE_data/OR/Opposite/0007/OR007@12_1.mat",
+      "source/48kHz_DE_data/OR/Opposite/0007/OR007@12_2.mat",
+      "source/48kHz_DE_data/OR/Opposite/0021/OR021@12_2.mat",
+      "source/48kHz_DE_data/OR/Opposite/0021/OR021@12_3.mat",
+      "source/48kHz_DE_data/OR/Orthogonal/0007/OR007@3_0.mat",
+      "source/48kHz_DE_data/OR/Orthogonal/0007/OR007@3_2.mat",
+      "source/48kHz_DE_data/OR/Orthogonal/0007/OR007@3_3.mat",
+      "source/48kHz_DE_data/OR/Orthogonal/0021/OR021@3_0.mat",
+      "source/48kHz_DE_data/OR/Orthogonal/0021/OR021@3_1.mat",
+      "source/48kHz_DE_data/OR/Orthogonal/0021/OR021@3_2.mat",
+      "source/48kHz_DE_data/OR/Orthogonal/0021/OR021@3_3.mat",
+      "source/48kHz_Normal_data/N_1_(1772rpm).mat",
+      "source/48kHz_Normal_data/N_2_(1750rpm).mat",
+      "source/48kHz_Normal_data/N_3.mat"
+    ],
+    "weighting": "equal_file_then_equal_window",
+    "weight_sum": 0.9999999999999998
+  },
+  "fit_seconds": 0.005815000040456653,
+  "score_type": "native_svm_margin_not_probability",
+  "estimators": {
+    "N": {
+      "intercept": -6.259769565121346,
+      "n_support": 10,
+      "classes": [
+        -1,
+        1
+      ]
+    },
+    "OR": {
+      "intercept": -0.7806191501815736,
+      "n_support": 249,
+      "classes": [
+        -1,
+        1
+      ]
+    },
+    "IR": {
+      "intercept": -0.9809336919173389,
+      "n_support": 229,
+      "classes": [
+        -1,
+        1
+      ]
+    },
+    "B": {
+      "intercept": -2.726390204504082,
+      "n_support": 161,
+      "classes": [
+        -1,
+        1
+      ]
+    }
+  }
+}

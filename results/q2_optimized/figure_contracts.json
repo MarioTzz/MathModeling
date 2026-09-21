@@ -1,0 +1,128 @@
+[
+  {
+    "figure": "raw_q2_class_files",
+    "question": "q2",
+    "goal": "训练类不平衡",
+    "unit_of_analysis": "70个源训练文件",
+    "evidence": "模型适配数据集/q1/files.csv",
+    "caption": "N类只有2个训练文件。",
+    "dpi": 300
+  },
+  {
+    "figure": "raw_q2_windows_per_file",
+    "question": "q2",
+    "goal": "窗口不是独立样本",
+    "unit_of_analysis": "116个源文件",
+    "evidence": "source_multiband_window_features.csv",
+    "caption": "每文件提取多个相关窗口。",
+    "dpi": 300
+  },
+  {
+    "figure": "raw_q2_fault_orders",
+    "question": "q2",
+    "goal": "题面BSF与自旋半值分列",
+    "unit_of_analysis": "SKF6205 DE几何",
+    "evidence": "原题附件1表1与表2",
+    "caption": "几何阶次不由测试标签拟合；spin_half是BSF的一半。",
+    "dpi": 300
+  },
+  {
+    "figure": "process_q2_parameter_surface",
+    "question": "q2",
+    "goal": "93文件内部选择树参数",
+    "unit_of_analysis": "93开发文件重复三折",
+    "evidence": "final_cv_summary.csv",
+    "caption": "颜色及数值为文件级平均准确率。",
+    "dpi": 300
+  },
+  {
+    "figure": "process_q2_feature_family",
+    "question": "q2",
+    "goal": "验证集冻结特征家族",
+    "unit_of_analysis": "23个验证文件",
+    "evidence": "feature_family_validation_metrics.csv",
+    "caption": "每种家族的树参数只用70个训练文件选取。",
+    "dpi": 300
+  },
+  {
+    "figure": "process_q2_feature_importance",
+    "question": "q2",
+    "goal": "主要分裂特征",
+    "unit_of_analysis": "93开发文件模型",
+    "evidence": "feature_importances.csv",
+    "caption": "不纯度重要性为训练内描述，非因果贡献。",
+    "dpi": 300
+  },
+  {
+    "figure": "process_q2_band_contribution",
+    "question": "q2",
+    "goal": "三频带均可进入树分裂",
+    "unit_of_analysis": "93开发文件模型",
+    "evidence": "feature_importances.csv",
+    "caption": "q1_base是1500—3000 Hz原统计特征；其余为物理阶次及包络量。",
+    "dpi": 300
+  },
+  {
+    "figure": "result_q2_confusion",
+    "question": "q2",
+    "goal": "23文件中22个正确",
+    "unit_of_analysis": "23个原有测试文件",
+    "evidence": "confusion_test.csv",
+    "caption": "唯一错误为48kHz外圈故障判成滚动体故障；测试集此前已查看。",
+    "dpi": 300
+  },
+  {
+    "figure": "result_q2_accuracy",
+    "question": "q2",
+    "goal": "优化模型达到观察测试门槛",
+    "unit_of_analysis": "原23文件测试及116文件重复CV",
+    "evidence": "summary.json / full_source_cv_audit.csv",
+    "caption": "测试集曾被查看，柱形为观察结果，不构成全新盲测保证。",
+    "dpi": 300
+  },
+  {
+    "figure": "result_q2_file_margins",
+    "question": "q2",
+    "goal": "错误文件间隔可追踪",
+    "unit_of_analysis": "23个原有测试文件",
+    "evidence": "source_test_file_scores.csv",
+    "caption": "树分数不是校准的正确概率。",
+    "dpi": 300
+  },
+  {
+    "figure": "result_q2_per_class",
+    "question": "q2",
+    "goal": "分别检查四类召回",
+    "unit_of_analysis": "23个原有测试文件",
+    "evidence": "per_class_test.csv",
+    "caption": "正常类测试仅1个文件，召回缺乏精细分辨率。",
+    "dpi": 300
+  },
+  {
+    "figure": "result_q2_robustness",
+    "question": "q2",
+    "goal": "原始信号扰动后完整重算",
+    "unit_of_analysis": "23个原有测试文件",
+    "evidence": "robustness_perturbations.csv",
+    "caption": "增益与噪声都从MAT重新提取三频带特征。",
+    "dpi": 300
+  },
+  {
+    "figure": "flow_overall_model",
+    "question": "q2",
+    "goal": "四问流程与交付边界",
+    "unit_of_analysis": "研究阶段",
+    "evidence": "问题一和问题二已实算",
+    "caption": "虚线表示后续计划。",
+    "dpi": 300
+  },
+  {
+    "figure": "flow_q2_model",
+    "question": "q2",
+    "goal": "优化模型完整求解路径",
+    "unit_of_analysis": "原始文件",
+    "evidence": "问题二_求解.py",
+    "caption": "各折以文件为单位；测试结果不进入拟合。",
+    "dpi": 300
+  }
+]

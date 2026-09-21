@@ -1,0 +1,6 @@
+﻿feature_family,accuracy,macro_f1,balanced_accuracy,normal_recall,n_files,min_samples_leaf,max_features,n_features,tie_preference
+q1_base,0.91304347826087,0.930555555555556,0.95,1,23,1,0.5,12,0
+single_band_physics,0.956521739130435,0.964114832535885,0.975,1,23,1,sqrt,38,0
+multiband_title_bsf,0.956521739130435,0.964114832535885,0.975,1,23,1,sqrt,90,0
+multiband_spin_half,0.956521739130435,0.964114832535885,0.975,1,23,1,sqrt,90,1
+multiband_both,0.956521739130435,0.964114832535885,0.975,1,23,1,sqrt,108,0

@@ -1,0 +1,2 @@
+﻿file_id,true_label,split,windows,prediction,median_prediction,majority_prediction,margin,vote_fraction,score_N,score_OR,score_IR,score_B
+source/48kHz_Normal_data/N_0.mat,N,test,4,B,B,N,0.438610303668532,0.5,-0.346082525428585,-0.871187277428301,-1.19644017244218,0.0925277782399467

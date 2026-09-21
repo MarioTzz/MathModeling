@@ -1,0 +1,62 @@
+{
+  "seed": 42,
+  "representations": {
+    "equal_revolutions": "模型适配数据集/q1/window_features_all.csv",
+    "one_second": "模型适配数据集/q1/baseline_1s_features_all.csv"
+  },
+  "main_model": "physics_multiband_extratrees",
+  "optimized": {
+    "seed": 42,
+    "window_revolutions": 20,
+    "resonance_bands_hz": [[500, 1500], [1500, 3000], [3000, 5000]],
+    "single_band_hz": [1500, 3000],
+    "bearing_geometry": {
+      "type": "SKF6205_DE",
+      "rolling_elements": 9,
+      "ball_diameter_inch": 0.3126,
+      "pitch_diameter_inch": 1.537,
+      "contact_angle_deg": 0
+    },
+    "order_half_widths": [0.1, 0.2, 0.3],
+    "fundamental_half_width": 0.2,
+    "contrast_half_width": 0.6,
+    "feature_family_order": ["q1_base", "single_band_physics", "multiband_title_bsf", "multiband_spin_half", "multiband_both"],
+    "feature_family_tiebreak": "multiband_spin_half",
+    "n_estimators": 500,
+    "min_samples_leaf_grid": [1, 2, 3],
+    "max_features_grid": ["sqrt", "0.25", "0.5", "0.75", "1.0"],
+    "cv_seeds": [11, 29, 42, 71, 97],
+    "train_cv_folds": 2,
+    "development_cv_folds": 3,
+    "class_order": ["N", "OR", "IR", "B"],
+    "amplitude_gains": [0.5, 1.0, 2.0],
+    "noise_relative_rms": [0.0, 0.01, 0.05, 0.1],
+    "numeric_epsilon": 1e-12,
+    "required_test_accuracy": 0.95
+  },
+  "candidate_models": [
+    {"name": "rbf_unweighted", "kernel": "rbf", "weighting": "window_uniform"},
+    {"name": "rbf_class_balanced", "kernel": "rbf", "weighting": "class_balanced"},
+    {"name": "rbf_file_class_balanced", "kernel": "rbf", "weighting": "file_class_balanced"},
+    {"name": "linear_file_class_balanced", "kernel": "linear", "weighting": "file_class_balanced"}
+  ],
+  "c_grid": [1, 4, 16, 64, 256, 1024],
+  "gamma_grid": [0.03125, 0.125, 0.5, 2.0],
+  "linear_gamma_placeholder": 0.0,
+  "inner_folds": 2,
+  "bootstrap_repeats": 100,
+  "stability_threshold": 0.6,
+  "correlation_limit": 0.9,
+  "max_features": 8,
+  "numeric_epsilon": 1e-12,
+  "max_iter": 200000,
+  "solver_tolerance": 0.001,
+  "class_order": ["N", "OR", "IR", "B"],
+  "prediction_tiebreak": "class_order",
+  "noise_seed_derivation": "sha256(seed|file_id|noise_level)",
+  "amplitude_gains": [0.5, 1.0, 2.0],
+  "noise_relative_rms": [0.0, 0.01, 0.05, 0.1],
+  "selection_primary_metric": "macro_f1",
+  "selection_secondary_metric": "balanced_accuracy",
+  "representation_tiebreak": "one_second"
+}

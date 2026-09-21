@@ -1,0 +1,529 @@
+{
+  "stage": "q2",
+  "seed": 42,
+  "command": "MPLCONFIGDIR=.analysis-work/matplotlib XDG_CACHE_HOME=.analysis-work/font-cache PYTHONPATH=.analysis-work/q2-deps:.analysis-work/q1-deps:.analysis-work/python-deps:. /Users/mariozz/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 问题二_求解.py --overwrite",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "platform": "macOS-15.7.9-arm64-arm-64bit",
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.8.0"
+  },
+  "config": {
+    "seed": 42,
+    "representations": {
+      "equal_revolutions": "模型适配数据集/q1/window_features_all.csv",
+      "one_second": "模型适配数据集/q1/baseline_1s_features_all.csv"
+    },
+    "main_model": "rbf_file_class_balanced",
+    "candidate_models": [
+      {
+        "name": "rbf_unweighted",
+        "kernel": "rbf",
+        "weighting": "window_uniform"
+      },
+      {
+        "name": "rbf_class_balanced",
+        "kernel": "rbf",
+        "weighting": "class_balanced"
+      },
+      {
+        "name": "rbf_file_class_balanced",
+        "kernel": "rbf",
+        "weighting": "file_class_balanced"
+      },
+      {
+        "name": "linear_file_class_balanced",
+        "kernel": "linear",
+        "weighting": "file_class_balanced"
+      }
+    ],
+    "c_grid": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024
+    ],
+    "gamma_grid": [
+      0.03125,
+      0.125,
+      0.5,
+      2.0
+    ],
+    "linear_gamma_placeholder": 0.0,
+    "inner_folds": 2,
+    "bootstrap_repeats": 100,
+    "stability_threshold": 0.6,
+    "correlation_limit": 0.9,
+    "max_features": 8,
+    "numeric_epsilon": 1e-12,
+    "max_iter": 200000,
+    "solver_tolerance": 0.001,
+    "class_order": [
+      "N",
+      "OR",
+      "IR",
+      "B"
+    ],
+    "prediction_tiebreak": "class_order",
+    "noise_seed_derivation": "sha256(seed|file_id|noise_level)",
+    "amplitude_gains": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "noise_relative_rms": [
+      0.0,
+      0.01,
+      0.05,
+      0.1
+    ],
+    "selection_primary_metric": "macro_f1",
+    "selection_secondary_metric": "balanced_accuracy",
+    "representation_tiebreak": "one_second"
+  },
+  "inputs": [
+    {
+      "path": "configs/q2.json",
+      "sha256": "0fb01aa4b9fe09bfc15b29ad51379f14df3dacf7cbfb26e619fffa8bb1a7458c"
+    },
+    {
+      "path": "requirements-q2.txt",
+      "sha256": "afec61e7b14789e7926d93dace434b48ab725abbc7a65da43ed22e00d2fc77fa"
+    },
+    {
+      "path": "results/q1/summary.json",
+      "sha256": "baa2477124694200ed8b224777830baa2a00175adb08abfa7700e7b617b3ab0d"
+    },
+    {
+      "path": "utils/figure_export.py",
+      "sha256": "40ce3bcd31dfc4b33e38a1cb180c75dc730ee6fa046f04934c79f285c6f890c1"
+    },
+    {
+      "path": "utils/plot_style.py",
+      "sha256": "f3de0a0c858d6018310d7e461574697a4cec7b28e5e20b8ccdaa7749772147e2"
+    },
+    {
+      "path": "utils/q1_model.py",
+      "sha256": "22c190f6f962ac248f3104a6e1d7bafba402d8c38b2099b72a9af802345758ea"
+    },
+    {
+      "path": "utils/q2_model.py",
+      "sha256": "c58dc998f1ea7908d01eac6216a21635e28d95f065e9e8c424a3cf9a3c490992"
+    },
+    {
+      "path": "utils/q2_plots.py",
+      "sha256": "ef94288bfc1bbe9e8602e8ed69f6e6f3fe446e5daee61dd0988cef3032515f9e"
+    },
+    {
+      "path": "utils/visual_qa.py",
+      "sha256": "67675709e523c76e2748d50749de7bc6332f07df865379b26d024321fb40120f"
+    },
+    {
+      "path": "数据集/源域数据集/12kHz_DE_data/B/0007/B007_1.mat",
+      "sha256": "3d8e2a3c8ba7206397338e9e2eb0d3e7af0fca27d92aafe2fc00f1afe207dbe0"
+    },
+    {
+      "path": "数据集/源域数据集/12kHz_DE_data/B/0028/B028_1_(1772rpm).mat",
+      "sha256": "f1f220d373169dd850e6fafa72f58eb3cac73eac37b3d5b781501da2d84ab018"
+    },
+    {
+      "path": "数据集/源域数据集/12kHz_DE_data/IR/0007/IR007_1.mat",
+      "sha256": "e62df88e386112f7fbdb3313cb0af0f580f6d2af77af124cde0fdfcd76c7a6b8"
+    },
+    {
+      "path": "数据集/源域数据集/12kHz_DE_data/IR/0014/IR014_3.mat",
+      "sha256": "c7bd7775252f12af36cd7d8defd6c40af0c70ec292d944f29c08936e42214eef"
+    },
+    {
+      "path": "数据集/源域数据集/12kHz_DE_data/OR/Centered/0021/OR021@6_3.mat",
+      "sha256": "051fe58a156fa6d43b42f643a588d0251e066df62a2af711717daaf631c114fa"
+    },
+    {
+      "path": "数据集/源域数据集/12kHz_DE_data/OR/Opposite/0007/OR007@12_0.mat",
+      "sha256": "ee3b6233111755395b604e00d6fdb2d3b3ddd638852401ee8ce3f6347f5c58d1"
+    },
+    {
+      "path": "数据集/源域数据集/12kHz_DE_data/OR/Opposite/0007/OR007@12_1.mat",
+      "sha256": "8267b12787a849576d961bf78877f5772442616b3d2954b7e3e78d9b38c6fe4d"
+    },
+    {
+      "path": "数据集/源域数据集/12kHz_DE_data/OR/Opposite/0007/OR007@12_2.mat",
+      "sha256": "b11d024dd6f75d0edfe4d8645c9957aec1f501f8adb99a02c65b362f435996c0"
+    },
+    {
+      "path": "数据集/源域数据集/12kHz_DE_data/OR/Opposite/0021/OR021@12_3.mat",
+      "sha256": "98286b55618ae343d51b030506ebbab94c03e06b9bdb58f96476f9e4ae4300df"
+    },
+    {
+      "path": "数据集/源域数据集/12kHz_DE_data/OR/Orthogonal/0007/OR007@3_2.mat",
+      "sha256": "c32cc0b126e31ef4d47a2ebe355ff07d7d5117f5abe4f3ece391094332b2f640"
+    },
+    {
+      "path": "数据集/源域数据集/48kHz_DE_data/B/0007/B007_0.mat",
+      "sha256": "07a96dc79c97afae890a7752e263ad5400ded8f9b65f08f0f9da10f69157b167"
+    },
+    {
+      "path": "数据集/源域数据集/48kHz_DE_data/B/0014/B014_3.mat",
+      "sha256": "76efbd295e2ab0fc791688aecbc5531cad9cbc3cafa0ee8e9709f8e5d96b3c51"
+    },
+    {
+      "path": "数据集/源域数据集/48kHz_DE_data/B/0021/B021_3.mat",
+      "sha256": "6fcbd80b1ebedf8a3c26651b36834c37a532b08921f516074f43bc91225dda78"
+    },
+    {
+      "path": "数据集/源域数据集/48kHz_DE_data/IR/0007/IR007_1.mat",
+      "sha256": "1b05995768b2d640beddcd5d465d4d80624e419abb90b87e4999b4b3c9cb40da"
+    },
+    {
+      "path": "数据集/源域数据集/48kHz_DE_data/IR/0007/IR007_3.mat",
+      "sha256": "eed93570ecf49f04a21482bcab93960ac402dddf89748676ed9222f4a7470f09"
+    },
+    {
+      "path": "数据集/源域数据集/48kHz_DE_data/IR/0014/IR014_3.mat",
+      "sha256": "d8120dd34bba9d1bfdfb5cfe4246218e6a15884907e2a58782e44fc728c55c05"
+    },
+    {
+      "path": "数据集/源域数据集/48kHz_DE_data/IR/0021/IR021_0.mat",
+      "sha256": "f5315e6ac4d943d9f37a6f2bb481800e972369330912a5451e07caf2965b30e8"
+    },
+    {
+      "path": "数据集/源域数据集/48kHz_DE_data/OR/Centered/0014/OR014@6_0.mat",
+      "sha256": "0b6db2d5180748101497fdeaeb8bf43c0abf6507e64cf4071c4ade8f662b1647"
+    },
+    {
+      "path": "数据集/源域数据集/48kHz_DE_data/OR/Opposite/0007/OR007@12_3.mat",
+      "sha256": "c4899ae4db215cbeb02fa9f080a2649cefbff5d3059f04160909a2167918270b"
+    },
+    {
+      "path": "数据集/源域数据集/48kHz_DE_data/OR/Opposite/0021/OR021@12_0.mat",
+      "sha256": "147e79cef451e95de1efc8188d67088e617971f3cafc99e057b0e90cb982bfb0"
+    },
+    {
+      "path": "数据集/源域数据集/48kHz_DE_data/OR/Opposite/0021/OR021@12_1.mat",
+      "sha256": "80d4b7c05186de762b85453942296fe624f4c358aff81530859b8ae3c7d9c4c2"
+    },
+    {
+      "path": "数据集/源域数据集/48kHz_DE_data/OR/Orthogonal/0007/OR007@3_1.mat",
+      "sha256": "7e9ea59caf1246bc83bc5624c71f83e129281b8b4edef8bb249a3e8d373be332"
+    },
+    {
+      "path": "数据集/源域数据集/48kHz_Normal_data/N_0.mat",
+      "sha256": "27244368d835a9d7a66c5f63daa290a8eca1f554a881a8ec391a7abe809ada35"
+    },
+    {
+      "path": "模型适配数据集/q1/baseline_1s_features_all.csv",
+      "sha256": "3b9276c5d624db9602970cc6766af40ba28e691b84ccd9345f77d31179394fa6"
+    },
+    {
+      "path": "模型适配数据集/q1/files.csv",
+      "sha256": "26b6653758c43f665fa51b9973b12bda6ec0223883dd78d2107055867f6ca778"
+    },
+    {
+      "path": "模型适配数据集/q1/window_features_all.csv",
+      "sha256": "217dae53a37f835f4f4685c27d8ad1735fe40548ff1612b6f540ca496d10fa4b"
+    },
+    {
+      "path": "问题二_数学模型与求解说明.md",
+      "sha256": "339d2bcfe4ed138e2516af403689e931b24ee37300d335c3a9ad10a44369eb57"
+    },
+    {
+      "path": "问题二_求解.py",
+      "sha256": "9e034934859754b6d25341affb5a36cd7680d8d63357849fc12583e170b26c4d"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "figures/q2/flow_overall_model.png",
+      "sha256": "93288cb803d3e1a417cba401c89ca03a465f33312d9e86d94852662bea1e2a77"
+    },
+    {
+      "path": "figures/q2/flow_overall_model.svg",
+      "sha256": "0310b99088598d934bc697de3821f6e1029b26ce1a51e835dc66b7e506060611"
+    },
+    {
+      "path": "figures/q2/flow_q2_model.png",
+      "sha256": "40bc9f96ecb563bdffbf8f2627ccbadf2a4696434812b249ca5d972aba8908dc"
+    },
+    {
+      "path": "figures/q2/flow_q2_model.svg",
+      "sha256": "a143b72d966401b693c05e11416cf3c126aa1101ac2463cea9fa1c0d01cf12a1"
+    },
+    {
+      "path": "figures/q2/process_q2_feature_selection.png",
+      "sha256": "e8ea1178a9dd63e484d155ec43c5161f96fb9aeca98f33597069b6fe85f83859"
+    },
+    {
+      "path": "figures/q2/process_q2_feature_selection.svg",
+      "sha256": "28e36e990ab250104c3c14a69a2805044357b52bd4d23181f82e63e4392399d9"
+    },
+    {
+      "path": "figures/q2/process_q2_parameter_surface.png",
+      "sha256": "72ee93177eede588e01dd2c8ef614bf45bb24f398b4917536a46619230a10c5b"
+    },
+    {
+      "path": "figures/q2/process_q2_parameter_surface.svg",
+      "sha256": "bf6888dc764700dde06392066d964336e812328e6fdffcaa5ee414f42866ed82"
+    },
+    {
+      "path": "figures/q2/process_q2_representation_selection.png",
+      "sha256": "cb77d52af192127ac0481559bee36e6ac6876c669a0064a3b85b3c8605562731"
+    },
+    {
+      "path": "figures/q2/process_q2_representation_selection.svg",
+      "sha256": "862143b0832a8267363852543d51c797c72bcf3cce06812e202149df94713fe4"
+    },
+    {
+      "path": "figures/q2/process_q2_weight_audit.png",
+      "sha256": "f06103334f775b969acc8dfe79ff2215dc7b22ec3c1a916ec552fca5d9d9d4de"
+    },
+    {
+      "path": "figures/q2/process_q2_weight_audit.svg",
+      "sha256": "ebf76434d4e7dfcee3ede7b8f3f2890e7e58f20b72ac18948f07770082e3fefd"
+    },
+    {
+      "path": "figures/q2/raw_q2_class_imbalance.png",
+      "sha256": "73e73e37e23f315de7f34d8f2c0a7cf4f626ac0b1a9ea905f8940d8a70f9c5e0"
+    },
+    {
+      "path": "figures/q2/raw_q2_class_imbalance.svg",
+      "sha256": "a3a5ba74f16c686164dc8b731eeeed1e45d61b69004197c49df413a63cb03ed6"
+    },
+    {
+      "path": "figures/q2/raw_q2_feature_space.png",
+      "sha256": "8d92f6c0c286ca8e36795beae9d8f2593d49cfb60db68b6c7a4b71e344d446bc"
+    },
+    {
+      "path": "figures/q2/raw_q2_feature_space.svg",
+      "sha256": "41738c74e95df57aca24876c3c52e3e5d70a7966c74d002661acfee883b3651f"
+    },
+    {
+      "path": "figures/q2/raw_q2_windows_per_file.png",
+      "sha256": "abb063f22ba3d8182c1de548a67e5d002ddf201b023dfb2178d773058b632b26"
+    },
+    {
+      "path": "figures/q2/raw_q2_windows_per_file.svg",
+      "sha256": "e6b18326c5cccf431dda6417dd6303b4663825f0973371a0b60a013005651e72"
+    },
+    {
+      "path": "figures/q2/result_q2_ablation.png",
+      "sha256": "428dfd71ab3fc8d486fbdb684d23b9aa065818ed0f3db7be93cb021f28ccaa08"
+    },
+    {
+      "path": "figures/q2/result_q2_ablation.svg",
+      "sha256": "2da8945a11bb8423efb1ebf92f7a8af2d322efa40c3ae79acccb3c8ffd7a31f7"
+    },
+    {
+      "path": "figures/q2/result_q2_aggregation.png",
+      "sha256": "d5223a140b6ee7dfb4a9c62c85f46cffb0286b012782595e4bc8b133c16ef166"
+    },
+    {
+      "path": "figures/q2/result_q2_aggregation.svg",
+      "sha256": "89c65a3656a2d51d16b263218df29073110420629c9afe4f0170b83dd1287a1b"
+    },
+    {
+      "path": "figures/q2/result_q2_confusion.png",
+      "sha256": "4598addbbe93d4ea86b1cbc8ac82b7ba0ad037a36d92a261584611b081cd8800"
+    },
+    {
+      "path": "figures/q2/result_q2_confusion.svg",
+      "sha256": "46534d56469867297482f1436495f2a8d614035809f8cb06c0bc89afa0968a80"
+    },
+    {
+      "path": "figures/q2/result_q2_file_margins.png",
+      "sha256": "5c7185add5d80d39567ced8718f52cb3f1db84f602acdec7ef3400bafa88780f"
+    },
+    {
+      "path": "figures/q2/result_q2_file_margins.svg",
+      "sha256": "b5691e3d33b567e8880a2d0dcc9c1ad3eba5375d8a719762fbe5ebcb592ee220"
+    },
+    {
+      "path": "figures/q2/result_q2_robustness.png",
+      "sha256": "92bcf133057cddb5d4b6ad4ac6e3a421c4bb2a9743bc13db8f63caa126647f11"
+    },
+    {
+      "path": "figures/q2/result_q2_robustness.svg",
+      "sha256": "6a41ad2e22707d8b37a9d0cd06f169d14466a3ed0d1f99d2d1998b401a7b3bd1"
+    },
+    {
+      "path": "results/q2/ablation_test_metrics.csv",
+      "sha256": "c50071ab79269d4ca7cc535d80aa04583f6e677ecadce5cbec7d93915c4c53ef"
+    },
+    {
+      "path": "results/q2/aggregation_robustness.csv",
+      "sha256": "ef48c0d38578d2cc55d37aeb83f9c49999e16f336bde9a2109358666324743f1"
+    },
+    {
+      "path": "results/q2/confusion_test_linear_file_class_balanced.csv",
+      "sha256": "0ab6e6e871055b224ebeff65978c1580c8a1301a61321e4b6d5e0cdae3022182"
+    },
+    {
+      "path": "results/q2/confusion_test_rbf_class_balanced.csv",
+      "sha256": "99b54a471119f8ec52456aad8ea3f5b1c5f70a68f30bb1907a4b178355439b98"
+    },
+    {
+      "path": "results/q2/confusion_test_rbf_file_class_balanced.csv",
+      "sha256": "99b54a471119f8ec52456aad8ea3f5b1c5f70a68f30bb1907a4b178355439b98"
+    },
+    {
+      "path": "results/q2/confusion_test_rbf_unweighted.csv",
+      "sha256": "99b54a471119f8ec52456aad8ea3f5b1c5f70a68f30bb1907a4b178355439b98"
+    },
+    {
+      "path": "results/q2/figure_contracts.json",
+      "sha256": "ca1b06b7371f44c1eb2571b55152c933c4040689aa6c00c2a6d1349163bb7a62"
+    },
+    {
+      "path": "results/q2/final_cv_detailed.csv",
+      "sha256": "d29242ea8aaf1d57e7b7d0a480570f9557424891ba3d1dfd04aef8368dceab67"
+    },
+    {
+      "path": "results/q2/final_cv_summary.csv",
+      "sha256": "b519e34d485419b75ffa2f284afcf02c286db2f017ffab303d268a32cb203741"
+    },
+    {
+      "path": "results/q2/final_parameters.csv",
+      "sha256": "73ed52ee256564ff1c41a25d87b5d3000505f61d1b67cc9650961e6a2dcfb42c"
+    },
+    {
+      "path": "results/q2/normal_test_diagnostics.csv",
+      "sha256": "0bb02d4c3d410de08aeddf3859512a312d752e92e26d12787028586108c5649b"
+    },
+    {
+      "path": "results/q2/per_class_test_linear_file_class_balanced.csv",
+      "sha256": "8f498dda27ea516d58a07e838096489ca4a4f5e41bc9c20bf855ca394cbaa968"
+    },
+    {
+      "path": "results/q2/per_class_test_rbf_class_balanced.csv",
+      "sha256": "91273ad2fc2de288d9f6d5ed4843e50927b7acec311ff4164fcc9a1a7ce8ce42"
+    },
+    {
+      "path": "results/q2/per_class_test_rbf_file_class_balanced.csv",
+      "sha256": "c7153a6e25235ca85d82d4d4de82e11883416697d58e1c55c68b82f829371a04"
+    },
+    {
+      "path": "results/q2/per_class_test_rbf_unweighted.csv",
+      "sha256": "00f328033cfbb1441b54d80bad0635d59a1e58abd1afa3975281fca58b05989b"
+    },
+    {
+      "path": "results/q2/representation_cv_detailed.csv",
+      "sha256": "9dbda7f93de299753fd2ef01ba5201b4116f795a1555597d9af4656e5db4fe76"
+    },
+    {
+      "path": "results/q2/representation_cv_summary.csv",
+      "sha256": "d48e2efb3fefaebce9bd2a95ad35d93a5b3a2b3a71636d245a96406abf85367d"
+    },
+    {
+      "path": "results/q2/representation_validation_metrics.csv",
+      "sha256": "eea86b36b2d60eeac17edf6ecb0be3f018627af66075098bfe9381853a31fbc8"
+    },
+    {
+      "path": "results/q2/robustness_perturbations.csv",
+      "sha256": "7e7b056c9bc4d7f7465d8983c491a3ae4b6c7ed8fe5d326a246e8b39ffc7be0d"
+    },
+    {
+      "path": "results/q2/sample_weights_by_class.csv",
+      "sha256": "e2b833bc8bb454a30124c84802cf57a89d4b4eb73e5c4e18a9dc5d8954ed5844"
+    },
+    {
+      "path": "results/q2/sample_weights_by_file.csv",
+      "sha256": "d0d86aede6dde2a2e309f0b76fbd249b9d54dc46751e97de01dceb9b6afd3c33"
+    },
+    {
+      "path": "results/q2/selected_features_final.csv",
+      "sha256": "a4c399452b6a30b54b9a2d612fadac416fd77333b87bb18557e9a220bce9a228"
+    },
+    {
+      "path": "results/q2/source_test_file_scores.csv",
+      "sha256": "77a292286342c97607fc479dc725e0d16fc0f868b61faa554273290155b4c406"
+    },
+    {
+      "path": "results/q2/source_test_window_scores.csv",
+      "sha256": "cf924e279b3c8ca9c64579f357af6eb3e668b1b23c49270a82a8f278c573cab4"
+    },
+    {
+      "path": "results/q2/summary.json",
+      "sha256": "d55b30da1b672d6dbef853f479caef3e294e8dc6288e562f12d5a221c58d0322"
+    },
+    {
+      "path": "results/q2/support_vectors.csv",
+      "sha256": "2fa9ccf6ecc3d6adac7974deb335b8d981f239b080c8e79bfc92950ca43daf87"
+    },
+    {
+      "path": "results/q2/train70_selection_equal_revolutions.csv",
+      "sha256": "1c9d16052580813dde7b6891d84428b04edc4f56a14d498157b6aa6fe7613a22"
+    },
+    {
+      "path": "results/q2/train70_selection_one_second.csv",
+      "sha256": "1b7ee7cec4a79c4c6dd1596d68376c4895288d321eebedfd3690984f4b4bce96"
+    },
+    {
+      "path": "results/q2/validation_predictions_equal_revolutions.csv",
+      "sha256": "919471d6998d84c37446134c8b03c03d4a5261a1252aa0c94bcf5cdf48526a2b"
+    },
+    {
+      "path": "results/q2/validation_predictions_one_second.csv",
+      "sha256": "fa4f9f084d5def06e6e838689987d4873ea0dd97f89526e845a8d86013b2f2fa"
+    },
+    {
+      "path": "results/q2/图表清单.md",
+      "sha256": "2c2af44e5edb41637b7042821e1803e60c8d706c14a6f21d47ee592b8aa81325"
+    },
+    {
+      "path": "results/q2/图表面板.html",
+      "sha256": "5bd8d7d46eeb8a9003bcf5d7f0c7af1d5c047ffaf38cc7a9dd2f0a72017b9dfb"
+    },
+    {
+      "path": "results/q2/问题二_结果报告.md",
+      "sha256": "526d5dccd1a6cd8fd0140678f799882ac2d48523fbfa7961f09b777ba6b26416"
+    },
+    {
+      "path": "模型适配数据集/q2/linear_file_class_balanced.json",
+      "sha256": "8cf31c4216d35344117db3be990b6b86badcd68e258c127d248c9271f186dfb9"
+    },
+    {
+      "path": "模型适配数据集/q2/linear_file_class_balanced_arrays.npz",
+      "sha256": "6c4866d6ddb5a36f63eedf2ea4918eccecd04f0a1fa59360262aa97701065167"
+    },
+    {
+      "path": "模型适配数据集/q2/model_interface.json",
+      "sha256": "f40b162285c3fbc277e9b82ef7cc6710ed5e609457e951ce5d743c3f253a5f50"
+    },
+    {
+      "path": "模型适配数据集/q2/rbf_class_balanced.json",
+      "sha256": "ad84e3032d80ceaea3a450ec4f4ab5c2f2f0979f70427b79ae404cfb8896cda4"
+    },
+    {
+      "path": "模型适配数据集/q2/rbf_class_balanced_arrays.npz",
+      "sha256": "a54d039aa0bc942782637c15bbdc10e8d584f8c711006adb835c93e771e0206d"
+    },
+    {
+      "path": "模型适配数据集/q2/rbf_file_class_balanced.json",
+      "sha256": "7e4415cc3ca5631031160f6212019d54bab955968b66fd830b8c4660dfbe2472"
+    },
+    {
+      "path": "模型适配数据集/q2/rbf_file_class_balanced_arrays.npz",
+      "sha256": "d7dd7372c8fdfb702f25b429d2aa201788acfabc41c113498ad282f7c7d47dc4"
+    },
+    {
+      "path": "模型适配数据集/q2/rbf_unweighted.json",
+      "sha256": "8564195bf7a03fac788577bf19155ba100ef7bf2002e4b285de525d9fcd129d8"
+    },
+    {
+      "path": "模型适配数据集/q2/rbf_unweighted_arrays.npz",
+      "sha256": "76bcc6022a41eb8f5304c51a148c8a328f13548e016f74c7563029d6aa8d8afd"
+    },
+    {
+      "path": "模型适配数据集/q2/source_classifier.json",
+      "sha256": "7e4415cc3ca5631031160f6212019d54bab955968b66fd830b8c4660dfbe2472"
+    },
+    {
+      "path": "模型适配数据集/q2/source_classifier_arrays.npz",
+      "sha256": "d7dd7372c8fdfb702f25b429d2aa201788acfabc41c113498ad282f7c7d47dc4"
+    }
+  ],
+  "runtime_seconds": 11.182679541991092
+}
