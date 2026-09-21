@@ -1,0 +1,79 @@
+{
+  "mode": "audit",
+  "source_files": 116,
+  "train_files": 70,
+  "validation_files": 23,
+  "development_files": 93,
+  "test_files": 23,
+  "target_files_used": 0,
+  "n_windows": 595,
+  "n_features": 38,
+  "window_revolutions": 30,
+  "band_hz": [
+    1500,
+    3000
+  ],
+  "n_estimators": 500,
+  "or_center_weight": 4.0,
+  "cv_seeds": [
+    11,
+    29,
+    42,
+    71,
+    97
+  ],
+  "cv_stratification": "original_four_classes",
+  "baseline_20turn_threeband_test_correct": 22,
+  "baseline_20turn_threeband_test_accuracy": 0.9565217391304348,
+  "candidates": {
+    "four_classes": {
+      "development_cv_accuracy_mean": 0.978494623655914,
+      "development_cv_accuracy_min": 0.967741935483871,
+      "development_cv_macro_f1_mean": 0.9807366364763626,
+      "validation_correct": 22,
+      "validation_files": 23,
+      "fixed_test_correct": 21,
+      "fixed_test_files": 23,
+      "fixed_test_accuracy": 0.9130434782608695,
+      "fixed_test_errors": [
+        {
+          "file_id": "source/12kHz_DE_data/OR/Opposite/0007/OR007@12_1.mat",
+          "true_label": "OR",
+          "prediction": "B"
+        },
+        {
+          "file_id": "source/48kHz_DE_data/OR/Centered/0014/OR014@6_0.mat",
+          "true_label": "OR",
+          "prediction": "B"
+        }
+      ]
+    },
+    "position_subtypes": {
+      "development_cv_accuracy_mean": 0.9849462365591398,
+      "development_cv_accuracy_min": 0.978494623655914,
+      "development_cv_macro_f1_mean": 0.9855478299640682,
+      "validation_correct": 23,
+      "validation_files": 23,
+      "fixed_test_correct": 21,
+      "fixed_test_files": 23,
+      "fixed_test_accuracy": 0.9130434782608695,
+      "fixed_test_errors": [
+        {
+          "file_id": "source/12kHz_DE_data/OR/Opposite/0007/OR007@12_1.mat",
+          "true_label": "OR",
+          "prediction": "B"
+        },
+        {
+          "file_id": "source/48kHz_DE_data/OR/Centered/0014/OR014@6_0.mat",
+          "true_label": "OR",
+          "prediction": "B"
+        }
+      ]
+    }
+  },
+  "subtype_full_source_cv_accuracy_mean": 0.9551724137931036,
+  "required_test_accuracy": 0.97,
+  "minimum_correct_for_strictly_above_97_percent": 23,
+  "candidate_meets_fixed_test_target": false,
+  "runtime_seconds": 8.842298459028825
+}
